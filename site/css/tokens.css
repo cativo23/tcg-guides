@@ -1,0 +1,65 @@
+/* tokens.css — portable design tokens for the N's Zoroark ex guide
+ * theme: custom · vibe: "nocturnal illusion, trickster fox, moonlit deception"
+ * axes: dark / roman-serif / chromatic-violet ~300°
+ */
+
+:root {
+  /* ── colour — anchor hue 300 (violet), dark surface ── */
+  --color-paper:      oklch(14% 0.012 300);
+  --color-paper-2:    oklch(18% 0.014 300);
+  --color-paper-3:    oklch(22% 0.014 300);
+  --color-ink:        oklch(94% 0.008 300);
+  --color-ink-2:      oklch(72% 0.008 300);
+  --color-rule:       oklch(30% 0.012 300);
+  --color-rule-2:     oklch(24% 0.012 300);
+  --color-muted:      oklch(58% 0.010 300);
+  --color-neutral:    oklch(46% 0.010 300);
+  --color-accent:     oklch(64% 0.17 300);
+  --color-accent-ink: oklch(13% 0.02 300);
+  --color-focus:      oklch(72% 0.20 300);
+
+  /* semantic aliases used across the page */
+  --color-good:  oklch(72% 0.14 155); /* used once: cost-comparison "cheapest" mark */
+  --color-warn:  oklch(74% 0.15 70);  /* used once: legality caveat mark */
+
+  /* ── type ── */
+  --font-display: "Bodoni Moda", ui-serif, Georgia, serif;
+  --font-body:    "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --text-xs:   0.7rem;
+  --text-sm:   0.8125rem;
+  --text-base: 1rem;
+  --text-md:   1.125rem;
+  --text-lg:   1.4rem;
+  --text-xl:   1.9531rem;
+  --text-2xl:  2.4414rem;
+  --text-3xl:  3.0518rem;
+  --text-display: clamp(2.5rem, 4vw + 1rem, 4.4rem);
+
+  /* ── space (4pt scale) ── */
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  /* ── motion ── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:  cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long:  420ms;
+
+  /* ── z-index scale ── */
+  --z-base: 1;
+  --z-raised: 10;
+  --z-sticky: 200;
+  --z-tooltip: 600;
+}
