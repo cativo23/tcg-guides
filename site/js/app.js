@@ -1,4 +1,4 @@
-// N's Zoroark ex guide — scroll-spy nav, mobile rail toggle, copy-decklist utility.
+// N's Zoroark ex guide — scroll-spy nav, mobile rail toggle, scroll-reveal, copy-decklist utility.
 // No frameworks; IntersectionObserver only (no scroll listeners).
 
 (function () {
@@ -20,7 +20,7 @@
     .filter(Boolean);
 
   if (sections.length && 'IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(
+    const navObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
@@ -32,11 +32,30 @@
       },
       { rootMargin: '-20% 0px -70% 0px' }
     );
-    sections.forEach((s) => observer.observe(s));
+    sections.forEach((s) => navObserver.observe(s));
+  }
+
+  // Reveal-on-scroll: fires once per element, no scroll-event listeners.
+  const revealTargets = document.querySelectorAll('.reveal-on-scroll');
+  if (revealTargets.length && 'IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+    );
+    revealTargets.forEach((el) => revealObserver.observe(el));
+  } else {
+    revealTargets.forEach((el) => el.classList.add('is-visible'));
   }
 
   const copyBtn = document.querySelector('[data-copy-decklist]');
   if (copyBtn) {
+    const defaultLabel = copyBtn.textContent;
     copyBtn.addEventListener('click', async () => {
       const text = document.querySelector('#decklist-plaintext')?.textContent?.trim();
       if (!text) return;
@@ -44,14 +63,14 @@
       try {
         await navigator.clipboard.writeText(text);
         copyBtn.dataset.state = 'success';
-        copyBtn.textContent = 'Copiado ✓';
+        copyBtn.textContent = 'Copied ✓';
       } catch {
         copyBtn.removeAttribute('data-state');
-        copyBtn.textContent = 'No se pudo copiar — selecciona manualmente';
+        copyBtn.textContent = 'Could not copy — select manually';
       }
       setTimeout(() => {
         copyBtn.removeAttribute('data-state');
-        copyBtn.textContent = 'Copiar lista (formato TCG Live)';
+        copyBtn.textContent = defaultLabel;
       }, 2200);
     });
   }

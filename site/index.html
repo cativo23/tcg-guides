@@ -1,47 +1,54 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>N's Zoroark ex — Guía de Mazo</title>
-  <meta name="description" content="Decklist, estrategia y guía de compra para N's Zoroark ex — Standard 2026, verificado contra el meta actual y el matchup vs. Dragapult ex.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23241f2b'/%3E%3Cpath d='M8 22 L16 8 L24 22' fill='none' stroke='%23b48ce0' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <title>N's Zoroark ex — Deck Guide</title>
+  <meta name="description" content="Decklist, strategy, and buying guide for N's Zoroark ex — 2026 Standard, checked against the current meta and the Dragapult ex matchup.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23101b1d'/%3E%3Cpath d='M8 22 L16 8 L24 22' fill='none' stroke='%235fd0c9' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700;6..96,800&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <button class="rail-toggle" aria-label="Abrir navegación" aria-expanded="false">☰</button>
+  <button class="rail-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
 
   <div class="shell">
-    <nav class="rail" aria-label="Secciones">
+    <nav class="rail" aria-label="Sections">
       <a class="rail__mark" href="#top">N's ZOROARK EX</a>
       <div class="rail__nav">
-        <a href="#datos">Datos</a>
-        <a href="#legalidad">Legalidad</a>
-        <a href="#por-que">Por qué</a>
+        <a href="#stats">Stats</a>
+        <a href="#legality">Legality</a>
+        <a href="#why">Why This Deck</a>
         <a href="#decklist">Decklist</a>
-        <a href="#estrategia">Estrategia</a>
-        <a href="#compra">Compra</a>
-        <a href="#fuentes">Fuentes</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#buying">Buying Guide</a>
+        <a href="#sources">Sources</a>
       </div>
       <span class="rail__foot">tcg.cativo.dev</span>
     </nav>
 
     <main id="top">
-      <div class="doc-eyebrow reveal" style="--i:0">Guía de mazo · <strong>Standard 2026</strong> · verificado 2026‑09‑22</div>
-      <h1 class="doc-title reveal" style="--i:1">N's <span class="accent">Zoroark</span> ex</h1>
-      <p class="doc-dek reveal" style="--i:2">
-        Un zorro que nunca ataca lo que ves — solo lo que ya movió antes de que lo notaras.
-        La ilusión no está en las cartas: está en la secuencia. Esta guía es para probarlo en
-        TCG Live y luego armarlo en físico.
-      </p>
+      <div class="hero">
+        <div>
+          <div class="doc-eyebrow reveal" style="--i:0">Deck guide · <strong>2026 Standard</strong> · checked 2026‑09‑22</div>
+          <h1 class="doc-title reveal" style="--i:1">N's <span class="accent">Zoroark</span> ex</h1>
+          <p class="doc-dek reveal" style="--i:2">
+            A fox that never attacks what you see — only what it already moved before you
+            noticed. The illusion isn't in the cards; it's in the sequencing. This guide is for
+            testing it on TCG Live before building it in paper.
+          </p>
+        </div>
+        <a class="hero__card" href="https://www.tcgplayer.com/product/623525/pokemon-sv09-journey-together-ns-zoroark-ex-098-159" target="_blank" rel="noopener" aria-label="N's Zoroark ex, Journey Together #098/159, on TCGplayer">
+          <img src="img/n-zoroark-ex.png" alt="N's Zoroark ex card art, Journey Together #098/159" loading="eager" fetchpriority="high">
+        </a>
+      </div>
 
-      <div class="facts reveal" style="--i:3">
+      <div class="facts reveal" style="--i:3" id="stats">
         <div class="facts__cell">
           <div class="facts__label">vs. Dragapult ex</div>
-          <div class="facts__value">~70%<small>win rate reportado, City League JP</small></div>
+          <div class="facts__value">~70%<small>reported win rate, JP City League</small></div>
         </div>
         <div class="facts__cell">
           <div class="facts__label">Worlds 2026</div>
@@ -52,63 +59,78 @@
           <div class="facts__value">Top 10<small>Tord Reklev</small></div>
         </div>
         <div class="facts__cell">
-          <div class="facts__label">Costo (armado)</div>
-          <div class="facts__value">$66.67<small>vs. $73–95 en singles</small></div>
+          <div class="facts__label">Cost (pre-built)</div>
+          <div class="facts__value">$66.67<small>vs. $73–95 in singles</small></div>
         </div>
       </div>
 
-      <section id="legalidad">
-        <div class="section-head reveal" style="--i:4">01 — Formato</div>
-        <h2 class="section-title reveal" style="--i:5">Legalidad Standard</h2>
-        <p class="reveal" style="--i:6">
-          Rotación 2026 confirmada: solo las marcas de regulación <strong>H, I y J</strong> son
-          legales en Standard ahora mismo (digital desde el 26 de marzo de 2026, físico desde
-          el 10 de abril de 2026). Toda carta de este mazo cae dentro de esa ventana — no hay
-          nada aquí que rote antes de que termines de armarlo.
+      <div class="cardstats reveal-on-scroll">
+        <span><span class="pill-ability">Ability</span> Trade</span>
+        <span><b>Stage 1</b> — Evolves from N's Zorua</span>
+        <span><b>HP</b> 280</span>
+        <span><b>Weakness</b> <span class="weak">Grass ×2</span></span>
+        <span><b>Retreat</b> 2</span>
+      </div>
+
+      <section id="legality">
+        <div class="section-head reveal-on-scroll">01 — Format</div>
+        <h2 class="section-title reveal-on-scroll">Standard legality</h2>
+        <p class="reveal-on-scroll">
+          2026 rotation confirmed: only regulation marks <strong>H, I, and J</strong> are legal
+          in Standard right now (digital since March 26, 2026; paper since April 10, 2026).
+          Every card in this list falls inside that window — nothing here rotates out before
+          you finish building it.
         </p>
-        <div class="note">
-          <strong>Ojo con tu propio binder:</strong> si ya tienes cartas de sets viejos
+        <div class="note reveal-on-scroll">
+          <strong>Check your own binder:</strong> if you already own cards from older sets
           (30th Celebration, Mysterious Treasures, Paldea Evolved reg. G, Silver Tempest reg. F),
-          esas ya NO son legales en Standard — solo sirven para jugar Unlimited/casual.
+          those are no longer Standard-legal — they're Unlimited/casual only now.
         </div>
       </section>
 
-      <section id="por-que">
-        <div class="section-head reveal" style="--i:0">02 — Selección</div>
-        <h2 class="section-title reveal" style="--i:1">Por qué este mazo</h2>
-        <p class="lede reveal" style="--i:2">
-          No es un counter dedicado a Dragapult ex disfrazado de mazo completo — es, de forma
-          independiente, uno de los mazos con mejores resultados de todo el meta actual
-          (Top 10 en Worlds 2026 y NAIC 2026 al mismo tiempo), y da la casualidad de que también
-          es una de sus peores pesadillas.
+      <section id="why">
+        <div class="section-head reveal-on-scroll">02 — Selection</div>
+        <h2 class="section-title reveal-on-scroll">Why this deck</h2>
+        <p class="lede reveal-on-scroll">
+          This isn't a dedicated Dragapult ex counter dressed up as a full deck — independently,
+          it's one of the best-performing decks in the entire current meta (Top 10 at both
+          Worlds 2026 and NAIC 2026), and it happens to also be one of Dragapult's worst
+          matchups.
         </p>
-        <p class="reveal" style="--i:3">
-          El motor de dibujo de Zoroark ex (<em>Trade</em>: descarta 1, roba 2) iguala o supera
-          la consistencia del propio Dragapult, así que no te gana por tempo como le gana a
-          mazos más lentos. Y la combinación Binding Mochi + veneno de Pecharunt ex +
-          Black Belt's Training/Transformation Tome noquea a un ex de un solo golpe sin
-          necesitar un atacante gigante.
+        <p class="reveal-on-scroll">
+          Zoroark ex's own <span class="pill-ability">Ability</span> <strong>Trade</strong> —
+          <em>"You must discard a card from your hand in order to use this Ability. Once during
+          your turn, you may draw 2 cards"</em> — matches or beats Dragapult's own consistency
+          tools, so it doesn't lose the way slower decks do. And its second attack,
+          <strong>Night Joker</strong>, borrows an attack straight off one of your Benched N's
+          Pokémon — the card's own trickster identity, printed right on it.
         </p>
-        <p class="reveal" style="--i:4">
-          Se descartaron cinco alternativas serias por razones concretas: Team Rocket's Mewtwo ex
-          es un 49.25% real contra Dragapult (moneda al aire) y necesita 4 Pokémon Rocket en mesa
-          para activarse — lento. Mega Darkrai ex sí es favorito contra Dragapult, pero es un
-          combo de una sola vía con debilidad real a tipo Planta. Mega Excadrill ex pega
-          durísimo pero depende de un motor Stage 2 (Metang) más lento. Alakazam es
-          explícitamente débil contra Dragapult. Festival Lead es, según la propia comunidad,
-          el peor matchup de Dragapult — justo lo contrario de lo que buscamos.
+        <p class="reveal-on-scroll">
+          The kill switch is a separate combo: <strong>Binding Mochi + Pecharunt ex's poison +
+          Black Belt's Training/Transformation Tome</strong> is enough extra damage to one-shot
+          an ex without needing a giant attacker at all.
+        </p>
+        <p class="reveal-on-scroll">
+          Five serious alternatives were ruled out for concrete reasons: Team Rocket's Mewtwo ex
+          is a real 49.25% against Dragapult (a coin flip) and needs 4 Team Rocket Pokémon in
+          play just to turn on — slow. Mega Darkrai ex is favored against Dragapult but is a
+          single-line combo deck with a real Grass weakness. Mega Excadrill ex hits hardest in
+          the format but leans on a slower Stage 2 (Metang) engine. Alakazam is explicitly
+          unfavored against Dragapult. Festival Lead is, by the community's own account,
+          Dragapult's single worst matchup to be on the other side of.
         </p>
       </section>
 
       <section id="decklist">
-        <div class="section-head reveal" style="--i:0">03 — Lista</div>
-        <h2 class="section-title reveal" style="--i:1">Decklist — 60 cartas</h2>
-        <p class="reveal" style="--i:2">
-          Verificado contra un listado real en venta (pokefamfive, eBay) — cuadra en 60 con solo
-          ajustes de tech normales entre listas de torneo del mismo arquetipo.
+        <div class="section-head reveal-on-scroll">03 — List</div>
+        <h2 class="section-title reveal-on-scroll">Decklist — 60 cards</h2>
+        <p class="reveal-on-scroll">
+          Checked against a real listing for sale (pokefamfive, eBay) — it lines up at 60 with
+          only the ordinary tech adjustments you'd expect between tournament lists of the same
+          archetype.
         </p>
 
-        <div class="decklist reveal" style="--i:3">
+        <div class="decklist reveal-on-scroll">
           <div class="decklist__group">
             <div class="decklist__group-title"><span>Pokémon</span><span>19</span></div>
             <table class="spec">
@@ -130,7 +152,7 @@
           </div>
 
           <div class="decklist__group">
-            <div class="decklist__group-title"><span>Entrenador</span><span>34</span></div>
+            <div class="decklist__group-title"><span>Trainer</span><span>34</span></div>
             <table class="spec">
               <tbody>
                 <tr><td class="qty">4</td><td class="name">Lillie's Determination</td></tr>
@@ -153,7 +175,7 @@
           </div>
 
           <div class="decklist__group">
-            <div class="decklist__group-title"><span>Energía</span><span>7</span></div>
+            <div class="decklist__group-title"><span>Energy</span><span>7</span></div>
             <table class="spec">
               <tbody>
                 <tr><td class="qty">7</td><td class="name">Basic Darkness Energy</td></tr>
@@ -162,7 +184,7 @@
           </div>
 
           <div class="decklist__actions">
-            <button class="btn" data-copy-decklist type="button">Copiar lista (formato TCG Live)</button>
+            <button class="btn" data-copy-decklist type="button">Copy list (TCG Live format)</button>
           </div>
           <pre id="decklist-plaintext" style="position:absolute; left:-9999px;">Pokémon: 19
 4 N's Zorua
@@ -200,136 +222,118 @@ Energy: 7
         </div>
       </section>
 
-      <section id="estrategia">
-        <div class="section-head reveal" style="--i:0">04 — Cómo se juega</div>
-        <h2 class="section-title reveal" style="--i:1">Estrategia</h2>
+      <section id="strategy">
+        <div class="section-head reveal-on-scroll">04 — How to play it</div>
+        <h2 class="section-title reveal-on-scroll">Strategy</h2>
 
-        <h3 class="sub-title">Apertura</h3>
-        <p>
-          Guarda una mano con Básico + Ultra Ball o Buddy-Buddy Poffin. Prioriza sacar N's Zorua
-          y otro Básico en el turno 1, evoluciona a N's Zoroark ex apenas puedas — es Stage 1
-          normal, sin Rare Candy.
+        <h3 class="sub-title">Opening</h3>
+        <p class="reveal-on-scroll">
+          Keep a hand with a Basic plus Ultra Ball or Buddy-Buddy Poffin. Priority turn 1 is
+          getting N's Zorua and a second Basic down, then evolving into N's Zoroark ex as soon
+          as you can — it's a plain Stage 1, no Rare Candy needed.
         </p>
 
-        <h3 class="sub-title">El motor</h3>
-        <p>
-          <em>Trade</em> (descarta 1, roba 2) se usa casi cada turno una vez que Zoroark ex está
-          en juego — no es un lujo, es el motor del mazo. No la guardes "por si acaso": esperar
-          a tener el momento perfecto para usarla es la forma más común de perder tempo con este
-          mazo.
+        <h3 class="sub-title">The engine</h3>
+        <p class="reveal-on-scroll">
+          <strong>Trade</strong> gets used almost every turn once Zoroark ex is in play — it's
+          not a luxury, it's the deck's engine. Don't save it "for the perfect moment": waiting
+          for that moment is the most common way to lose tempo with this deck.
         </p>
 
-        <h3 class="sub-title">Condición de victoria</h3>
-        <p>
-          No es un solo atacante grande — inundas la banca barato (Zekrom, Munkidori,
-          Fezandipiti ex, Pecharunt ex cuestan poco de energía) y conviertes eso en KOs precisos:
-          <strong>Binding Mochi + veneno de Pecharunt ex + Black Belt's Training/Transformation
-          Tome</strong> es suficiente daño extra para tumbar un ex de un solo golpe sin
-          necesitar un atacante gigante.
+        <h3 class="sub-title">Win condition</h3>
+        <p class="reveal-on-scroll">
+          It isn't one big attacker — you flood the bench cheaply (Zekrom, Munkidori,
+          Fezandipiti ex, Pecharunt ex all cost little energy) and convert that into precise
+          knockouts: <strong>Binding Mochi + Pecharunt ex's poison + Black Belt's
+          Training/Transformation Tome</strong> is enough extra damage to drop an ex in one hit
+          without a giant attacker.
         </p>
 
-        <h3 class="sub-title">Combos clave</h3>
-        <ul class="plain">
-          <li>Zoroark ex Trade + N's PP Up + Ultra Ball/Poffin → la mano nunca se seca.</li>
-          <li>N's Castle + Night Stretcher → recicla a Zoroark ex si te lo noquean.</li>
-          <li>Binding Mochi + Pecharunt ex (veneno) + boost de daño → OHKO sin atacante grande.</li>
+        <h3 class="sub-title">Key combos</h3>
+        <ul class="plain reveal-on-scroll">
+          <li>Zoroark ex Trade + N's PP Up + Ultra Ball/Poffin → the hand never dries up.</li>
+          <li>N's Castle + Night Stretcher → recycle Zoroark ex if it gets knocked out.</li>
+          <li>Binding Mochi + Pecharunt ex poison + a damage boost → OHKO without a big attacker.</li>
         </ul>
 
-        <h3 class="sub-title">Errores comunes</h3>
-        <ul class="plain">
-          <li>No uses Trade sin nada bueno que descartar — espera a tener básicos redundantes o Supporters ya gastados.</li>
-          <li>No sobre-inviertas Transformation Tome en algo expuesto en banca — mazos que pegan banca (incluido Dragapult) lo castigan.</li>
-          <li>No guardes Boss's Orders/Cyrano "por si acaso" — este mazo vive del tempo; retrasarlos cuesta la ventana de KO.</li>
+        <h3 class="sub-title">Common misplays</h3>
+        <ul class="plain reveal-on-scroll">
+          <li>Don't use Trade with nothing worth discarding — wait for redundant Basics or spent Supporters.</li>
+          <li>Don't over-commit Transformation Tome to something exposed on the bench — bench-snipe decks (Dragapult included) punish it.</li>
+          <li>Don't hold Boss's Orders/Cyrano "just in case" — this deck lives on tempo; delaying them costs the KO window.</li>
         </ul>
 
-        <h3 class="sub-title">Por qué gana el matchup contra Dragapult</h3>
-        <p>
-          El motor de dibujo de Zoroark iguala o supera la consistencia de Dragapult, así que no
-          te saca ventaja por tempo como se la saca a mazos más lentos. Y el combo
-          veneno + daño extra noquea a Dragapult de un solo golpe en vez de intercambiar parejo
-          con él turno a turno.
+        <h3 class="sub-title">Why it beats Dragapult</h3>
+        <p class="reveal-on-scroll">
+          Zoroark's draw engine matches or beats Dragapult's own consistency, so it doesn't lose
+          the tempo race the way slower decks do against it. And the poison + damage-boost combo
+          knocks Dragapult out in one hit instead of trading evenly with it turn after turn.
         </p>
 
-        <div class="note">
-          <strong>Sesgo de secuenciación:</strong> ir primero o segundo cambia si puedes
-          comprometerte al combo completo desde el turno 2‑3 sin riesgo — varias fuentes lo
-          marcan como el mayor factor de swing en partidas cerradas, incluido este matchup.
+        <div class="note reveal-on-scroll">
+          <strong>Sequencing bias:</strong> going first or second changes whether you can commit
+          to the full combo by turn 2–3 without risk — several sources flag this as the single
+          biggest swing factor in close games, this matchup included.
         </div>
       </section>
 
-      <section id="compra">
-        <div class="section-head reveal" style="--i:0">05 — Comprarlo</div>
-        <h2 class="section-title reveal" style="--i:1">Guía de compra</h2>
-        <p>
-          No existe Battle Deck o Theme Deck oficial de este arquetipo específico. La ruta más
-          barata verificada es un mazo ya armado de un vendedor de terceros — comparado contra
-          comprar por singles o esperar pulls de sobre sellado.
+      <section id="buying">
+        <div class="section-head reveal-on-scroll">05 — Buying it</div>
+        <h2 class="section-title reveal-on-scroll">Buying guide</h2>
+        <p class="reveal-on-scroll">
+          There's no official Battle Deck or Theme Deck for this exact archetype. The cheapest
+          checked route is a pre-built deck from a third-party seller — compared here against
+          buying singles or gambling on sealed-product pulls.
         </p>
 
-        <table class="compare">
-          <thead>
-            <tr><th>Ruta</th><th>Costo</th></tr>
-          </thead>
+        <table class="compare reveal-on-scroll">
+          <thead><tr><th>Route</th><th>Cost</th></tr></thead>
           <tbody>
-            <tr class="best">
-              <td>eBay armado (pokefamfive, con fundas + deck box)</td>
-              <td class="price">$66.67</td>
-            </tr>
-            <tr>
-              <td>Singles sueltos (TCGplayer, sin envío)</td>
-              <td class="price">$73.49</td>
-            </tr>
-            <tr>
-              <td>Singles + envío fragmentado (real, 3–5 vendedores)</td>
-              <td class="price">$85–95</td>
-            </tr>
-            <tr>
-              <td>Build & Battle Box + resto en singles</td>
-              <td class="price">$90–105</td>
-            </tr>
-            <tr>
-              <td>Elite Trainer Box + resto en singles</td>
-              <td class="price">$110–130</td>
-            </tr>
+            <tr class="best"><td>Pre-built on eBay (pokefamfive, with sleeves + deck box)</td><td class="price">$66.67</td></tr>
+            <tr><td>Loose singles (TCGplayer, no shipping)</td><td class="price">$73.49</td></tr>
+            <tr><td>Singles + real fragmented shipping (3–5 sellers)</td><td class="price">$85–95</td></tr>
+            <tr><td>Build &amp; Battle Box + rest in singles</td><td class="price">$90–105</td></tr>
+            <tr><td>Elite Trainer Box + rest in singles</td><td class="price">$110–130</td></tr>
           </tbody>
         </table>
 
-        <p>
-          Un Elite Trainer Box o Build &amp; Battle Box de Journey Together sí trae promos
-          garantizados (N's Zorua foil, o posibilidad de N's Darmanitan) — pero valen centavos
-          en singles. Comprar sellado para "conseguir gratis" cartas de $0.20 no compensa
-          $20–50 de caja. Sirven si quieres las fundas/playmat como objeto físico, no para
-          ahorrar.
+        <p class="reveal-on-scroll">
+          An Elite Trainer Box or Build &amp; Battle Box from Journey Together does include
+          guaranteed promos (an N's Zorua foil, or a chance at N's Darmanitan) — but those are
+          worth pennies as singles. Buying sealed to "get cards for free" that cost $0.20 doesn't
+          make up for a $20–50 box. They're worth it if you want the sleeves/playmat as physical
+          objects, not as a savings strategy.
         </p>
 
-        <div class="note">
-          <strong>La carta más cara:</strong> N's Zoroark ex normal (sin alt art) cuesta poco —
-          las versiones ilustración especial corren $100+ pero no dan ninguna ventaja en mesa.
-          Compra la versión jugable, no la coleccionable.
+        <div class="note reveal-on-scroll">
+          <strong>The one expensive card:</strong> a plain N's Zoroark ex (no alt art) is cheap —
+          the special-illustration versions run $100+ but give you zero advantage at the table.
+          Buy the playable print, not the collectible one.
         </div>
       </section>
 
-      <section id="fuentes">
-        <div class="section-head reveal" style="--i:0">06 — Verificación</div>
-        <h2 class="section-title reveal" style="--i:1">Fuentes</h2>
-        <p>Todo dato de esta guía viene de una de estas fuentes, consultadas el 2026‑09‑22.</p>
-        <ol class="sources">
-          <li><span class="n">01</span><span>Pokémon.com — <a class="inline-link" href="https://www.pokemon.com/us/pokemon-news/2026-pokemon-tcg-standard-format-rotation-announcement" target="_blank" rel="noopener">2026 Standard Format Rotation Announcement</a> — confirma marcas H/I/J y fechas de rotación.</span></li>
-          <li><span class="n">02</span><span>Limitless TCG — <a class="inline-link" href="https://limitlesstcg.com/decks/list/28759" target="_blank" rel="noopener">decklist de Öjvind Svinhufvud, 9° lugar Worlds 2026</a>.</span></li>
-          <li><span class="n">03</span><span>Limitless TCG — <a class="inline-link" href="https://limitlesstcg.com/decks/list/28257" target="_blank" rel="noopener">decklist de Tord Reklev, 10° lugar NAIC 2026</a>.</span></li>
-          <li><span class="n">04</span><span>Limitless TCG — <a class="inline-link" href="https://play.limitlesstcg.com/decks/rocket-mewtwo-ex/matchups?format=standard&rotation=2026&set=POR" target="_blank" rel="noopener">matchup data Rocket's Mewtwo ex vs Dragapult ex</a> (264‑262‑10, 49.25%).</span></li>
+      <section id="sources">
+        <div class="section-head reveal-on-scroll">06 — Verification</div>
+        <h2 class="section-title reveal-on-scroll">Sources</h2>
+        <p class="reveal-on-scroll">Every figure in this guide traces to one of these, checked on 2026‑09‑22.</p>
+        <ol class="sources reveal-on-scroll">
+          <li><span class="n">01</span><span>Pokémon.com — <a class="inline-link" href="https://www.pokemon.com/us/pokemon-news/2026-pokemon-tcg-standard-format-rotation-announcement" target="_blank" rel="noopener">2026 Standard Format Rotation Announcement</a> — confirms H/I/J marks and rotation dates.</span></li>
+          <li><span class="n">02</span><span>Limitless TCG — <a class="inline-link" href="https://limitlesstcg.com/decks/list/28759" target="_blank" rel="noopener">Öjvind Svinhufvud's decklist, 9th place Worlds 2026</a>.</span></li>
+          <li><span class="n">03</span><span>Limitless TCG — <a class="inline-link" href="https://limitlesstcg.com/decks/list/28257" target="_blank" rel="noopener">Tord Reklev's decklist, 10th place NAIC 2026</a>.</span></li>
+          <li><span class="n">04</span><span>Limitless TCG — <a class="inline-link" href="https://play.limitlesstcg.com/decks/rocket-mewtwo-ex/matchups?format=standard&rotation=2026&set=POR" target="_blank" rel="noopener">Rocket's Mewtwo ex vs Dragapult ex matchup data</a> (264‑262‑10, 49.25%).</span></li>
           <li><span class="n">05</span><span>PokéBeach — <a class="inline-link" href="https://www.pokebeach.com/2025/07/dragapult-ex-zoroark-ex-and-its-great-matchups" target="_blank" rel="noopener">Dragapult ex / Zoroark ex and Its Great Matchups</a>.</span></li>
-          <li><span class="n">06</span><span>note.com (City League japonés) — <a class="inline-link" href="https://note.com/noya365/n/ne79f557fb522?hl=en" target="_blank" rel="noopener">reporte de ~70% win rate vs Dragapult ex</a>.</span></li>
-          <li><span class="n">07</span><span>Limitless TCG — <a class="inline-link" href="https://limitlesstcg.com/cards/JTG/98" target="_blank" rel="noopener">ficha de la carta N's Zoroark ex</a> (Journey Together #098/159).</span></li>
-          <li><span class="n">08</span><span>eBay — <a class="inline-link" href="https://www.ebay.com/itm/267579175538" target="_blank" rel="noopener">listado verificado del mazo armado</a>, vendedor pokefamfive (99.6% positivo).</span></li>
-          <li><span class="n">09</span><span>PokemonCard.io — <a class="inline-link" href="https://pokemoncard.io/deck/n-s-zoroark-122067" target="_blank" rel="noopener">cotización de costo en singles (TCGplayer)</a>.</span></li>
+          <li><span class="n">06</span><span>note.com (Japanese City League) — <a class="inline-link" href="https://note.com/noya365/n/ne79f557fb522?hl=en" target="_blank" rel="noopener">~70% reported win rate vs Dragapult ex</a>.</span></li>
+          <li><span class="n">07</span><span>tcgdex — <a class="inline-link" href="https://api.tcgdex.net/v2/en/sets/sv09" target="_blank" rel="noopener">N's Zoroark ex card data</a> (Journey Together #098/159): Stage 1, HP 280, Weakness Grass ×2, retreat 2, Ability text.</span></li>
+          <li><span class="n">08</span><span>eBay — <a class="inline-link" href="https://www.ebay.com/itm/267579175538" target="_blank" rel="noopener">verified listing for the pre-built deck</a>, seller pokefamfive (99.6% positive).</span></li>
+          <li><span class="n">09</span><span>PokemonCard.io — <a class="inline-link" href="https://pokemoncard.io/deck/n-s-zoroark-122067" target="_blank" rel="noopener">singles cost quote (TCGplayer)</a>.</span></li>
         </ol>
       </section>
 
       <footer class="letter-close">
-        <p class="close-line">Pruébalo en TCG Live primero. Si el combo se siente bien ahí, arma el físico sin dudar.</p>
+        <p class="close-line">Test it on TCG Live first. If the combo feels right there, build the paper copy without hesitating.</p>
         <p class="signoff">— C.</p>
-        <p class="postscript">P.D. — revisa este documento cuando el formato rote de nuevo; toda cifra aquí tiene fecha de vencimiento.</p>
+        <p class="postscript">P.S. — revisit this page whenever the format rotates again; every figure here has an expiration date.</p>
+        <p class="credit">Card image © 2025 Pokémon / Nintendo / Creatures / GAME FREAK. Used for reference; not affiliated.</p>
       </footer>
     </main>
   </div>
