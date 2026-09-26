@@ -9,13 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20260926">
+  <link rel="stylesheet" href="css/styles.css?v=20260926b">
 </head>
 <body>
   <nav class="pill" aria-label="Sections">
     <a class="pill__mark" href="#top">Zoroark</a>
     <div class="pill__links">
       <a href="#deck">Deck</a>
+      <a href="#engine">Engine</a>
       <a href="#play">Play</a>
       <a href="#damage">Damage</a>
       <a href="#matchups">Matchups</a>
@@ -25,6 +26,7 @@
 
   <main id="top">
     <header class="masthead">
+      <div class="masthead__text">
       <p class="masthead__line">60 cards · 2026 Standard · after Pitch Black · checked 2026‑09‑26</p>
       <h1 class="masthead__title">N's <span class="accent">Zoroark</span> ex</h1>
       <p class="masthead__dek">
@@ -37,6 +39,12 @@
         <div class="stats__cell"><dt>vs. Dragapult ex</dt><dd>46.8%<small>473‑514</small></dd></div>
         <div class="stats__cell"><dt>Biggest hit</dt><dd>330<small>on an ex</small></dd></div>
       </dl>
+      </div>
+      <div class="fan" aria-hidden="true">
+        <div class="fan__card fan__card--l" data-tilt><img src="img/cards/zekrom.webp" alt="" width="600" height="825" fetchpriority="high"><span class="foil"></span></div>
+        <div class="fan__card fan__card--r" data-tilt><img src="img/cards/reshiram.webp" alt="" width="600" height="825"><span class="foil"></span></div>
+        <div class="fan__card fan__card--c" data-tilt><img src="img/cards/zoroark-ex.webp" alt="" width="600" height="825" fetchpriority="high"><span class="foil"></span></div>
+      </div>
     </header>
 
     <section id="deck" class="mat" aria-labelledby="deck-title">
@@ -55,16 +63,16 @@
             </button>
             <span class="slot__caption"><span class="slot__name">N&#x27;s Zorua</span> <span class="slot__code">JTG 97</span></span>
           </li>
-          <li class="slot" data-stack="4">
+          <li class="slot" data-stack="4" data-foil>
             <button class="card" type="button" data-card data-name="N&#x27;s Zoroark ex" data-code="JTG 98" data-qty="4" data-role="Trade: discard 1, draw 2 — once per turn for each one in play. Night Joker (DD) uses an attack from a Benched N&#x27;s Pokémon." data-img="img/cards/zoroark-ex.webp">
-              <span class="card__face"><img src="img/cards/zoroark-ex.webp" alt="N&#x27;s Zoroark ex" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__face"><img src="img/cards/zoroark-ex.webp" alt="N&#x27;s Zoroark ex" loading="lazy" decoding="async" width="600" height="825"><span class="foil"></span></span>
               <span class="card__qty">×4</span>
             </button>
             <span class="slot__caption"><span class="slot__name">N&#x27;s Zoroark ex</span> <span class="slot__code">JTG 98</span></span>
           </li>
-          <li class="slot" data-stack="2">
+          <li class="slot" data-stack="2" data-foil>
             <button class="card" type="button" data-card data-name="N&#x27;s Zekrom" data-code="ASC 155" data-qty="2" data-role="Night Joker source: Rampaging Thunder for 250. Stays on the Bench and needs no Energy." data-img="img/cards/zekrom.webp">
-              <span class="card__face"><img src="img/cards/zekrom.webp" alt="N&#x27;s Zekrom" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__face"><img src="img/cards/zekrom.webp" alt="N&#x27;s Zekrom" loading="lazy" decoding="async" width="600" height="825"><span class="foil"></span></span>
               <span class="card__qty">×2</span>
             </button>
             <span class="slot__caption"><span class="slot__name">N&#x27;s Zekrom</span> <span class="slot__code">ASC 155</span></span>
@@ -76,16 +84,16 @@
             </button>
             <span class="slot__caption"><span class="slot__name">Munkidori</span> <span class="slot__code">TWM 95</span></span>
           </li>
-          <li class="slot" data-stack="1">
+          <li class="slot" data-stack="1" data-foil>
             <button class="card" type="button" data-card data-name="N&#x27;s Reshiram" data-code="JTG 116" data-qty="1" data-role="Night Joker source: Virtuous Flame for 170 with no drawback — the default attack." data-img="img/cards/reshiram.webp">
-              <span class="card__face"><img src="img/cards/reshiram.webp" alt="N&#x27;s Reshiram" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__face"><img src="img/cards/reshiram.webp" alt="N&#x27;s Reshiram" loading="lazy" decoding="async" width="600" height="825"><span class="foil"></span></span>
               <span class="card__qty">×1</span>
             </button>
             <span class="slot__caption"><span class="slot__name">N&#x27;s Reshiram</span> <span class="slot__code">JTG 116</span></span>
           </li>
-          <li class="slot" data-stack="1">
+          <li class="slot" data-stack="1" data-foil>
             <button class="card" type="button" data-card data-name="Pecharunt ex" data-code="SFA 39" data-qty="1" data-role="Subjugating Chains swaps in a Benched Darkness Pokémon and Poisons it. Irritated Outburst: 60 per Prize your opponent has taken." data-img="img/cards/pecharunt-ex.webp">
-              <span class="card__face"><img src="img/cards/pecharunt-ex.webp" alt="Pecharunt ex" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__face"><img src="img/cards/pecharunt-ex.webp" alt="Pecharunt ex" loading="lazy" decoding="async" width="600" height="825"><span class="foil"></span></span>
               <span class="card__qty">×1</span>
             </button>
             <span class="slot__caption"><span class="slot__name">Pecharunt ex</span> <span class="slot__code">SFA 39</span></span>
@@ -255,6 +263,37 @@ Energy: 1
 8 Basic {D} Energy MEE 7
 
 Total Cards: 60</pre>
+    </section>
+
+    <section id="engine" aria-labelledby="engine-title">
+      <h2 id="engine-title" class="section-title">One turn, start to 330</h2>
+      <p class="section-dek">The deck's engine in four steps — draw, reload, poison, hit. Each step is one card doing one job.</p>
+      <ol class="chain" role="list">
+        <li class="chain__step">
+          <span class="chain__n">1</span>
+          <img class="chain__img" src="img/cards/zoroark-ex.webp" alt="N's Zoroark ex" loading="lazy" width="600" height="825">
+          <h3 class="chain__title">Trade</h3>
+          <p class="chain__text">Discard a spare Darkness Energy, draw 2. Once per turn for each Zoroark ex in play.</p>
+        </li>
+        <li class="chain__step">
+          <span class="chain__n">2</span>
+          <img class="chain__img" src="img/cards/ns-pp-up.webp" alt="N's PP Up" loading="lazy" width="600" height="825">
+          <h3 class="chain__title">Reload</h3>
+          <p class="chain__text">N's PP Up puts that Energy back on a Benched Zoroark ex — no Supporter spent.</p>
+        </li>
+        <li class="chain__step">
+          <span class="chain__n">3</span>
+          <img class="chain__img" src="img/cards/pecharunt-ex.webp" alt="Pecharunt ex" loading="lazy" width="600" height="825">
+          <h3 class="chain__title">Poison</h3>
+          <p class="chain__text">Subjugating Chains swaps the Mochi-holding Zoroark ex in and Poisons it: +40.</p>
+        </li>
+        <li class="chain__step chain__step--hit">
+          <span class="chain__n">4</span>
+          <img class="chain__img" src="img/cards/zekrom.webp" alt="N's Zekrom" loading="lazy" width="600" height="825">
+          <h3 class="chain__title">330</h3>
+          <p class="chain__text">Black Belt's Training (+40), then Night Joker → Rampaging Thunder (250) on an ex.</p>
+        </li>
+      </ol>
     </section>
 
     <section id="play" aria-labelledby="play-title">
@@ -472,6 +511,6 @@ Total Cards: 60</pre>
     </div>
   </dialog>
 
-  <script src="js/app.js?v=20260926"></script>
+  <script src="js/app.js?v=20260926b"></script>
 </body>
 </html>

@@ -78,6 +78,39 @@
     document.querySelectorAll('[data-card]').forEach((c) => (c.style.cursor = 'default'));
   }
 
+  // Holo tilt: hero cards tilt toward the pointer and the foil sheen follows it.
+  // Fine pointers only, and off entirely under reduced motion — touch gets the static sheen.
+  const canTilt =
+    window.matchMedia('(hover: hover) and (pointer: fine)').matches &&
+    !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (canTilt) {
+    const track = (el, maxDeg) => {
+      let frame = 0;
+      el.addEventListener('pointermove', (e) => {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(() => {
+          const r = el.getBoundingClientRect();
+          const x = (e.clientX - r.left) / r.width;
+          const y = (e.clientY - r.top) / r.height;
+          el.style.setProperty('--mx', `${(x * 100).toFixed(1)}%`);
+          el.style.setProperty('--my', `${(y * 100).toFixed(1)}%`);
+          if (maxDeg) {
+            el.style.setProperty('--ry', `${((x - 0.5) * maxDeg * 2).toFixed(2)}deg`);
+            el.style.setProperty('--rx', `${((0.5 - y) * maxDeg * 2).toFixed(2)}deg`);
+            el.classList.add('is-tilting');
+          }
+        });
+      });
+      el.addEventListener('pointerleave', () => {
+        cancelAnimationFrame(frame);
+        el.classList.remove('is-tilting');
+        ['--rx', '--ry', '--mx', '--my'].forEach((p) => el.style.removeProperty(p));
+      });
+    };
+    document.querySelectorAll('[data-tilt]').forEach((el) => track(el, 12));
+    document.querySelectorAll('.slot[data-foil] .card').forEach((el) => track(el, 0));
+  }
+
   const copyBtn = document.querySelector('[data-copy-decklist]');
   if (copyBtn) {
     const defaultLabel = copyBtn.textContent;
