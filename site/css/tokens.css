@@ -22,6 +22,19 @@
 
   --color-accent-2:     oklch(58% 0.20 25);   /* crimson — secondary, from Zoroark's fur + the Ability pill */
 
+  /* chart poles — validated (dataviz validator, dark, surface paper): L inside 0.48–0.67, CVD ΔE 15.4 */
+  --color-chart-pos: oklch(66% 0.13 195);   /* favourable / damage bars */
+  --color-chart-neg: oklch(58% 0.20 25);    /* unfavourable */
+  --color-chart-mid: oklch(46% 0.012 205);  /* 50% midline */
+
+  /* playmat */
+  --color-mat:      oklch(15% 0.02 215);
+  --color-mat-line: oklch(34% 0.05 195);
+  --shadow-card:    0 1px 0 oklch(0% 0 0 / 0.4), 0 10px 24px -8px oklch(0% 0 0 / 0.7);
+  --color-scrim:    oklch(0% 0 0 / 0.72);
+  --radius-card: 10px;
+  --radius-pill: 999px;
+
   --color-good:  oklch(72% 0.14 155);
   --color-warn:  oklch(74% 0.15 70);
 
@@ -39,6 +52,7 @@
   --text-2xl:  2.4414rem;
   --text-3xl:  3.0518rem;
   --text-display: clamp(2.5rem, 4vw + 1rem, 4.4rem);
+  --text-mega: clamp(3rem, 7vw + 1rem, 6.5rem);
 
   --space-3xs: 0.125rem;
   --space-2xs: 0.25rem;

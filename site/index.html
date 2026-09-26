@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>N's Zoroark ex — Deck Guide</title>
-  <meta name="description" content="Decklist, strategy, and matchup guide for N's Zoroark ex — 2026 Standard, checked against the current post-Pitch Black meta and its top five most-played decks.">
+  <meta name="description" content="The 60 cards of an N's Zoroark ex build, laid out on the mat — strategy, damage routes, matchups and upgrades for 2026 Standard after Pitch Black.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23101b1d'/%3E%3Cpath d='M8 22 L16 8 L24 22' fill='none' stroke='%235fd0c9' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,185 +12,236 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <button class="rail-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="pill" aria-label="Sections">
+    <a class="pill__mark" href="#top">Zoroark</a>
+    <div class="pill__links">
+      <a href="#deck">Deck</a>
+      <a href="#play">Play</a>
+      <a href="#damage">Damage</a>
+      <a href="#matchups">Matchups</a>
+      <a href="#upgrades">Upgrades</a>
+    </div>
+  </nav>
 
-  <div class="shell">
-    <nav class="rail" aria-label="Sections">
-      <a class="rail__mark" href="#top">N's ZOROARK EX</a>
-      <div class="rail__nav">
-        <a href="#stats">Stats</a>
-        <a href="#legality">Legality</a>
-        <a href="#why">Why This Deck</a>
-        <a href="#decklist">Decklist</a>
-        <a href="#strategy">Strategy</a>
-        <a href="#matchups">Matchups</a>
-        <a href="#upgrades">Upgrades</a>
-        <a href="#sources">Sources</a>
-      </div>
-      <span class="rail__foot">tcg.cativo.dev</span>
-    </nav>
+  <main id="top">
+    <header class="masthead">
+      <p class="masthead__line">60 cards · 2026 Standard · after Pitch Black · checked 2026‑09‑26</p>
+      <h1 class="masthead__title">N's <span class="accent">Zoroark</span> ex</h1>
+      <p class="masthead__dek">
+        Trade draws two a turn for every Zoroark ex in play, and Night Joker fires Zekrom's 250 and
+        Reshiram's 170 straight from the Bench — no Fire or Lightning Energy anywhere in the list.
+      </p>
+      <dl class="stats">
+        <div class="stats__cell"><dt>Meta share</dt><dd>5.42%<small>5th in Standard</small></dd></div>
+        <div class="stats__cell"><dt>Worlds 2026</dt><dd>Top 10<small>Svinhufvud, 9th</small></dd></div>
+        <div class="stats__cell"><dt>vs. Dragapult ex</dt><dd>46.8%<small>473‑514</small></dd></div>
+        <div class="stats__cell"><dt>Biggest hit</dt><dd>330<small>on an ex</small></dd></div>
+      </dl>
+    </header>
 
-    <main id="top">
-      <div class="hero">
-        <div>
-          <div class="doc-eyebrow reveal" style="--i:0">Deck guide · <strong>2026 Standard</strong> · checked 2026‑09‑26</div>
-          <h1 class="doc-title reveal" style="--i:1">N's <span class="accent">Zoroark</span> ex</h1>
-          <p class="doc-dek reveal" style="--i:2">
-            A fox that never attacks what you see — only what it already moved before you
-            noticed. The illusion isn't in the cards; it's in the sequencing. This guide is for
-            testing it on TCG Live before building it in paper.
-          </p>
-        </div>
-        <a class="hero__card" href="https://www.tcgplayer.com/product/623525/pokemon-sv09-journey-together-ns-zoroark-ex-098-159" target="_blank" rel="noopener" aria-label="N's Zoroark ex, Journey Together #098/159, on TCGplayer">
-          <img src="img/n-zoroark-ex.png" alt="N's Zoroark ex card art, Journey Together #098/159" loading="eager" fetchpriority="high">
-        </a>
-      </div>
-
-      <div class="facts reveal" style="--i:3" id="stats">
-        <div class="facts__cell">
-          <div class="facts__label">Meta share</div>
-          <div class="facts__value">5.42%<small>5th in Standard, Pitch Black</small></div>
-        </div>
-        <div class="facts__cell">
-          <div class="facts__label">Worlds 2026</div>
-          <div class="facts__value">Top 10<small>Öjvind Svinhufvud, 9th</small></div>
-        </div>
-        <div class="facts__cell">
-          <div class="facts__label">vs. Dragapult ex</div>
-          <div class="facts__value">46.8%<small>473‑514, Limitless</small></div>
-        </div>
-        <div class="facts__cell">
-          <div class="facts__label">Max single attack</div>
-          <div class="facts__value">330<small>on an ex, before Weakness</small></div>
-        </div>
+    <section id="deck" class="mat" aria-labelledby="deck-title">
+      <div class="mat__head">
+        <h2 id="deck-title" class="mat__title">The mat</h2>
+        <button class="btn" data-copy-decklist type="button">Copy list for TCG Live</button>
       </div>
 
-      <div class="cardstats reveal-on-scroll">
-        <span><span class="pill-ability">Ability</span> Trade</span>
-        <span><b>Stage 1</b> — Evolves from N's Zorua</span>
-        <span><b>HP</b> 280</span>
-        <span><b>Weakness</b> <span class="weak">Grass ×2</span></span>
-        <span><b>Retreat</b> 2</span>
+      <div class="zone">
+        <h3 class="zone__title">Pokémon <span>16</span></h3>
+        <ul class="grid" role="list">
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="N&#x27;s Zorua" data-code="JTG 97" data-qty="4" data-role="Poffin target at 70 HP. Bench two on turn 1 — every Zoroark ex starts here." data-img="img/cards/zorua.webp">
+              <span class="card__face"><img src="img/cards/zorua.webp" alt="N&#x27;s Zorua" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">N&#x27;s Zorua</span> <span class="slot__code">JTG 97</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="N&#x27;s Zoroark ex" data-code="JTG 98" data-qty="4" data-role="Trade: discard 1, draw 2 — once per turn for each one in play. Night Joker (DD) uses an attack from a Benched N&#x27;s Pokémon." data-img="img/cards/zoroark-ex.webp">
+              <span class="card__face"><img src="img/cards/zoroark-ex.webp" alt="N&#x27;s Zoroark ex" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">N&#x27;s Zoroark ex</span> <span class="slot__code">JTG 98</span></span>
+          </li>
+          <li class="slot" data-stack="2">
+            <button class="card" type="button" data-card data-name="N&#x27;s Zekrom" data-code="ASC 155" data-qty="2" data-role="Night Joker source: Rampaging Thunder for 250. Stays on the Bench and needs no Energy." data-img="img/cards/zekrom.webp">
+              <span class="card__face"><img src="img/cards/zekrom.webp" alt="N&#x27;s Zekrom" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×2</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">N&#x27;s Zekrom</span> <span class="slot__code">ASC 155</span></span>
+          </li>
+          <li class="slot" data-stack="2">
+            <button class="card" type="button" data-card data-name="Munkidori" data-code="TWM 95" data-qty="2" data-role="Adrena-Brain moves up to 3 damage counters onto an opposing Pokémon. Needs a Darkness Energy attached." data-img="img/cards/munkidori.webp">
+              <span class="card__face"><img src="img/cards/munkidori.webp" alt="Munkidori" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×2</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Munkidori</span> <span class="slot__code">TWM 95</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="N&#x27;s Reshiram" data-code="JTG 116" data-qty="1" data-role="Night Joker source: Virtuous Flame for 170 with no drawback — the default attack." data-img="img/cards/reshiram.webp">
+              <span class="card__face"><img src="img/cards/reshiram.webp" alt="N&#x27;s Reshiram" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">N&#x27;s Reshiram</span> <span class="slot__code">JTG 116</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Pecharunt ex" data-code="SFA 39" data-qty="1" data-role="Subjugating Chains swaps in a Benched Darkness Pokémon and Poisons it. Irritated Outburst: 60 per Prize your opponent has taken." data-img="img/cards/pecharunt-ex.webp">
+              <span class="card__face"><img src="img/cards/pecharunt-ex.webp" alt="Pecharunt ex" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Pecharunt ex</span> <span class="slot__code">SFA 39</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Budew" data-code="ASC 16" data-qty="1" data-role="Itchy Pollen costs nothing: your opponent can&#x27;t play Items next turn. 30 HP, free retreat." data-img="img/cards/budew.webp">
+              <span class="card__face"><img src="img/cards/budew.webp" alt="Budew" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Budew</span> <span class="slot__code">ASC 16</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Yveltal" data-code="MEG 88" data-qty="1" data-role="Clutch (D, 20): the Defending Pokémon can&#x27;t retreat next turn." data-img="img/cards/yveltal.webp">
+              <span class="card__face"><img src="img/cards/yveltal.webp" alt="Yveltal" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Yveltal</span> <span class="slot__code">MEG 88</span></span>
+          </li>
+        </ul>
       </div>
 
-      <section id="legality">
-        <div class="section-head reveal-on-scroll">01 — Format</div>
-        <h2 class="section-title reveal-on-scroll">Standard legality</h2>
-        <p class="reveal-on-scroll">
-          2026 rotation confirmed: only regulation marks <strong>H, I, and J</strong> are legal
-          in Standard right now (digital since March 26, 2026; paper since April 10, 2026).
-          Every card in this list falls inside that window — nothing here rotates out before
-          you finish building it.
-        </p>
-        <div class="note reveal-on-scroll">
-          <strong>Check your own binder:</strong> if you already own cards from older sets
-          (30th Celebration, Mysterious Treasures, Paldea Evolved reg. G, Silver Tempest reg. F),
-          those are no longer Standard-legal — they're Unlimited/casual only now.
-        </div>
-      </section>
+      <div class="zone">
+        <h3 class="zone__title">Trainers <span>36</span></h3>
+        <ul class="grid" role="list">
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Lillie&#x27;s Determination" data-code="MEG 119" data-qty="4" data-role="Shuffle your hand in and draw 6 — or 8 while you still have all 6 Prize cards." data-img="img/cards/lillies-determination.webp">
+              <span class="card__face"><img src="img/cards/lillies-determination.webp" alt="Lillie&#x27;s Determination" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Lillie&#x27;s Determination</span> <span class="slot__code">MEG 119</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Boss&#x27;s Orders" data-code="MEG 114" data-qty="4" data-role="Pull up the Benched Pokémon you want to Knock Out." data-img="img/cards/bosss-orders.webp">
+              <span class="card__face"><img src="img/cards/bosss-orders.webp" alt="Boss&#x27;s Orders" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Boss&#x27;s Orders</span> <span class="slot__code">MEG 114</span></span>
+          </li>
+          <li class="slot" data-stack="2">
+            <button class="card" type="button" data-card data-name="Cyrano" data-code="SSP 170" data-qty="2" data-role="Search up to 3 Pokémon ex — here, Zoroark ex and Pecharunt ex." data-img="img/cards/cyrano.webp">
+              <span class="card__face"><img src="img/cards/cyrano.webp" alt="Cyrano" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×2</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Cyrano</span> <span class="slot__code">SSP 170</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Janine&#x27;s Secret Art" data-code="SFA 59" data-qty="1" data-role="Darkness Energy from the deck to up to 2 Darkness Pokémon. The Active one is Poisoned." data-img="img/cards/janines-secret-art.webp">
+              <span class="card__face"><img src="img/cards/janines-secret-art.webp" alt="Janine&#x27;s Secret Art" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Janine&#x27;s Secret Art</span> <span class="slot__code">SFA 59</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Black Belt&#x27;s Training" data-code="JTG 143" data-qty="1" data-role="+40 this turn against your opponent&#x27;s Active Pokémon ex." data-img="img/cards/black-belts-training.webp">
+              <span class="card__face"><img src="img/cards/black-belts-training.webp" alt="Black Belt&#x27;s Training" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Black Belt&#x27;s Training</span> <span class="slot__code">JTG 143</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="N&#x27;s PP Up" data-code="JTG 153" data-qty="4" data-role="A Basic Energy from your discard onto a Benched N&#x27;s Pokémon." data-img="img/cards/ns-pp-up.webp">
+              <span class="card__face"><img src="img/cards/ns-pp-up.webp" alt="N&#x27;s PP Up" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">N&#x27;s PP Up</span> <span class="slot__code">JTG 153</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Buddy-Buddy Poffin" data-code="TEF 144" data-qty="4" data-role="Up to 2 Basics with 70 HP or less: N&#x27;s Zorua and Budew." data-img="img/cards/buddy-buddy-poffin.webp">
+              <span class="card__face"><img src="img/cards/buddy-buddy-poffin.webp" alt="Buddy-Buddy Poffin" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Buddy-Buddy Poffin</span> <span class="slot__code">TEF 144</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Ultra Ball" data-code="MEG 131" data-qty="4" data-role="Discard 2, search for any Pokémon." data-img="img/cards/ultra-ball.webp">
+              <span class="card__face"><img src="img/cards/ultra-ball.webp" alt="Ultra Ball" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Ultra Ball</span> <span class="slot__code">MEG 131</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Poké Pad" data-code="POR 81" data-qty="4" data-role="Search a Pokémon without a Rule Box — everything except Zoroark ex and Pecharunt ex." data-img="img/cards/poke-pad.webp">
+              <span class="card__face"><img src="img/cards/poke-pad.webp" alt="Poké Pad" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Poké Pad</span> <span class="slot__code">POR 81</span></span>
+          </li>
+          <li class="slot" data-stack="2">
+            <button class="card" type="button" data-card data-name="Night Stretcher" data-code="ASC 196" data-qty="2" data-role="A Pokémon or a Basic Energy from your discard back to your hand." data-img="img/cards/night-stretcher.webp">
+              <span class="card__face"><img src="img/cards/night-stretcher.webp" alt="Night Stretcher" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×2</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Night Stretcher</span> <span class="slot__code">ASC 196</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Dark Bell" data-code="PBL 75" data-qty="1" data-role="Both Active non-Darkness Pokémon are Confused. Play it with a Darkness Pokémon Active." data-img="img/cards/dark-bell.webp">
+              <span class="card__face"><img src="img/cards/dark-bell.webp" alt="Dark Bell" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Dark Bell</span> <span class="slot__code">PBL 75</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Secret Box" data-code="TWM 163" data-qty="1" data-role="ACE SPEC. Discard 3: search an Item, a Tool, a Supporter and a Stadium." data-img="img/cards/secret-box.webp">
+              <span class="card__face"><img src="img/cards/secret-box.webp" alt="Secret Box" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Secret Box</span> <span class="slot__code">TWM 163</span></span>
+          </li>
+          <li class="slot" data-stack="2">
+            <button class="card" type="button" data-card data-name="Binding Mochi" data-code="PRE 95" data-qty="2" data-role="+40 damage while the Pokémon holding it is Poisoned." data-img="img/cards/binding-mochi.webp">
+              <span class="card__face"><img src="img/cards/binding-mochi.webp" alt="Binding Mochi" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×2</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Binding Mochi</span> <span class="slot__code">PRE 95</span></span>
+          </li>
+          <li class="slot" data-stack="2">
+            <button class="card" type="button" data-card data-name="N&#x27;s Castle" data-code="JTG 152" data-qty="2" data-role="N&#x27;s Pokémon retreat for free — on both sides of the table." data-img="img/cards/ns-castle.webp">
+              <span class="card__face"><img src="img/cards/ns-castle.webp" alt="N&#x27;s Castle" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×2</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">N&#x27;s Castle</span> <span class="slot__code">JTG 152</span></span>
+          </li>
+        </ul>
+      </div>
 
-      <section id="why">
-        <div class="section-head reveal-on-scroll">02 — Selection</div>
-        <h2 class="section-title reveal-on-scroll">Why this deck</h2>
-        <p class="lede reveal-on-scroll">
-          N's Zoroark is the 5th most-played archetype in Standard after Pitch Black (5.42% meta
-          share), and it put two players in the Top 10 at Worlds 2026. Its strength is
-          consistency rather than one big attacker.
-        </p>
-        <p class="reveal-on-scroll">
-          Zoroark ex's <span class="pill-ability">Ability</span> <strong>Trade</strong> —
-          <em>"You must discard a card from your hand in order to use this Ability. Once during
-          your turn, you may draw 2 cards"</em> — stacks: with three Zoroark ex in play that's
-          three Trades a turn. Its attack, <strong>Night Joker</strong> (DD), uses an attack from
-          one of your Benched N's Pokémon, which is how this list reaches N's Zekrom's 250 and
-          N's Reshiram's 170 without running a single Fire or Lightning Energy.
-        </p>
-        <p class="reveal-on-scroll">
-          This build leans into that consistency with four each of Ultra Ball, Poké Pad and
-          Boss's Orders, and adds a poison package — Pecharunt ex, Janine's Secret Art, Binding
-          Mochi, two Munkidori and Dark Bell — for the extra damage that turns big hits into
-          one-hit KOs on Pokémon ex.
-        </p>
-      </section>
+      <div class="zone">
+        <h3 class="zone__title">Energy <span>8</span></h3>
+        <ul class="grid" role="list">
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Darkness Energy" data-code="MEE 7" data-qty="8" data-role="Basic Darkness Energy. Trade discards it; N&#x27;s PP Up and Night Stretcher bring it back.">
+              <span class="card__face"><span class="energy-art" aria-hidden="true"><span class="energy-art__orb"></span><span class="energy-art__label">Basic Darkness Energy</span></span></span>
+              <span class="card__qty">×8</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Darkness Energy</span> <span class="slot__code">MEE 7</span></span>
+          </li>
+        </ul>
+      </div>
 
-      <section id="decklist">
-        <div class="section-head reveal-on-scroll">03 — List</div>
-        <h2 class="section-title reveal-on-scroll">Decklist — 60 cards</h2>
-        <p class="reveal-on-scroll">
-          A consistency-heavy build: the same Trade + N's PP Up engine as the tournament lists,
-          with full playsets of Ultra Ball, Poké Pad and Boss's Orders, and a poison package
-          (Pecharunt ex, Janine's Secret Art, Binding Mochi, Dark Bell, two Munkidori).
-          Set codes and collector numbers included for TCG Live import.
-        </p>
-
-        <div class="decklist reveal-on-scroll">
-          <div class="decklist__group">
-            <div class="decklist__group-title"><span>Pokémon</span><span>16</span></div>
-            <table class="spec">
-              <tbody>
-                <tr><td class="qty">4</td><td class="name">N's Zorua <span style="color:var(--color-muted)">JTG 97</span></td></tr>
-                <tr><td class="qty">4</td><td class="name">N's Zoroark ex <span style="color:var(--color-muted)">JTG 98</span></td></tr>
-                <tr><td class="qty">2</td><td class="name">N's Zekrom <span style="color:var(--color-muted)">ASC 155</span></td></tr>
-                <tr><td class="qty">2</td><td class="name">Munkidori <span style="color:var(--color-muted)">TWM 95</span></td></tr>
-                <tr><td class="qty">1</td><td class="name">N's Reshiram <span style="color:var(--color-muted)">JTG 116</span></td></tr>
-                <tr><td class="qty">1</td><td class="name">Pecharunt ex <span style="color:var(--color-muted)">SFA 39</span></td></tr>
-                <tr><td class="qty">1</td><td class="name">Budew <span style="color:var(--color-muted)">ASC 16</span></td></tr>
-                <tr><td class="qty">1</td><td class="name">Yveltal <span style="color:var(--color-muted)">MEG 88</span></td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="decklist__group">
-            <div class="decklist__group-title"><span>Trainer</span><span>36</span></div>
-            <table class="spec">
-              <tbody>
-                <tr><td class="qty">4</td><td class="name">Lillie's Determination <span style="color:var(--color-muted)">MEG 119</span></td></tr>
-                <tr><td class="qty">4</td><td class="name">Boss's Orders <span style="color:var(--color-muted)">MEG 114</span></td></tr>
-                <tr><td class="qty">2</td><td class="name">Cyrano <span style="color:var(--color-muted)">SSP 170</span></td></tr>
-                <tr><td class="qty">1</td><td class="name">Janine's Secret Art <span style="color:var(--color-muted)">SFA 59</span></td></tr>
-                <tr><td class="qty">1</td><td class="name">Black Belt's Training <span style="color:var(--color-muted)">JTG 143</span></td></tr>
-                <tr><td class="qty">4</td><td class="name">N's PP Up <span style="color:var(--color-muted)">JTG 153</span></td></tr>
-                <tr><td class="qty">4</td><td class="name">Buddy-Buddy Poffin <span style="color:var(--color-muted)">TEF 144</span></td></tr>
-                <tr><td class="qty">4</td><td class="name">Ultra Ball <span style="color:var(--color-muted)">MEG 131</span></td></tr>
-                <tr><td class="qty">4</td><td class="name">Poké Pad <span style="color:var(--color-muted)">POR 81</span></td></tr>
-                <tr><td class="qty">2</td><td class="name">Night Stretcher <span style="color:var(--color-muted)">ASC 196</span></td></tr>
-                <tr><td class="qty">1</td><td class="name">Dark Bell <span style="color:var(--color-muted)">PBL 75</span></td></tr>
-                <tr><td class="qty">1</td><td class="name">Secret Box <span style="color:var(--color-muted)">TWM 163 · ACE SPEC</span></td></tr>
-                <tr><td class="qty">2</td><td class="name">Binding Mochi <span style="color:var(--color-muted)">PRE 95</span></td></tr>
-                <tr><td class="qty">2</td><td class="name">N's Castle <span style="color:var(--color-muted)">JTG 152</span></td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="decklist__group">
-            <div class="decklist__group-title"><span>Energy</span><span>8</span></div>
-            <table class="spec">
-              <tbody>
-                <tr><td class="qty">8</td><td class="name">Darkness Energy <span style="color:var(--color-muted)">MEE 7</span></td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="decklist__actions">
-            <button class="btn" data-copy-decklist type="button">Copy list (TCG Live format)</button>
-          </div>
-          <pre id="decklist-plaintext" style="position:absolute; left:-9999px;">Pokémon: 8
-4 N's Zorua JTG 97
-4 N's Zoroark ex JTG 98
-2 N's Zekrom ASC 155
+      <p class="mat__note">Tap a card for what it does here. Secret Box stands in for the ACE SPEC until it's confirmed. Art shows the printings in this copy of the deck; set codes are the TCG Live import codes.</p>
+      <pre id="decklist-plaintext" hidden>Pokémon: 8
+4 N&#x27;s Zorua JTG 97
+4 N&#x27;s Zoroark ex JTG 98
+2 N&#x27;s Zekrom ASC 155
 2 Munkidori TWM 95
-1 N's Reshiram JTG 116
+1 N&#x27;s Reshiram JTG 116
 1 Pecharunt ex SFA 39
 1 Budew ASC 16
 1 Yveltal MEG 88
 
 Trainer: 14
-4 Lillie's Determination MEG 119
-4 Boss's Orders MEG 114
+4 Lillie&#x27;s Determination MEG 119
+4 Boss&#x27;s Orders MEG 114
 2 Cyrano SSP 170
-1 Janine's Secret Art SFA 59
-1 Black Belt's Training JTG 143
-4 N's PP Up JTG 153
+1 Janine&#x27;s Secret Art SFA 59
+1 Black Belt&#x27;s Training JTG 143
+4 N&#x27;s PP Up JTG 153
 4 Buddy-Buddy Poffin TEF 144
 4 Ultra Ball MEG 131
 4 Poké Pad POR 81
@@ -198,163 +249,228 @@ Trainer: 14
 1 Dark Bell PBL 75
 1 Secret Box TWM 163
 2 Binding Mochi PRE 95
-2 N's Castle JTG 152
+2 N&#x27;s Castle JTG 152
 
 Energy: 1
 8 Basic {D} Energy MEE 7
 
 Total Cards: 60</pre>
-        </div>
-      </section>
+    </section>
 
-      <section id="strategy">
-        <div class="section-head reveal-on-scroll">04 — How to play it</div>
-        <h2 class="section-title reveal-on-scroll">Strategy</h2>
+    <section id="play" aria-labelledby="play-title">
+      <h2 id="play-title" class="section-title">How it plays</h2>
+      <div class="panels">
+        <article class="panel">
+          <h3 class="panel__title">Opening</h3>
+          <ul class="panel__list">
+            <li>Keep any hand with a Basic. Best: N's Zorua plus Buddy-Buddy Poffin, Ultra Ball or Poké Pad.</li>
+            <li><strong>Going first:</strong> no Supporter, no attack — just bench. Poffin, Poké Pad, Ultra Ball, as many Zorua as you can, Pecharunt ex if you have it.</li>
+            <li><strong>Going second:</strong> Supporter right away — Cyrano for Zoroark ex, or Lillie's Determination if the hand missed. Budew Active can Itchy Pollen for free.</li>
+            <li>Bench order (5 slots): two Zorua → Budew → Pecharunt ex → Zekrom / Reshiram as Night Joker sources → Munkidori only if you can spare the attachment.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel__title">The engine</h3>
+          <ul class="panel__list">
+            <li><strong>Trade every turn</strong> with every Zoroark ex in play. Discard spare Darkness Energy first — N's PP Up and Night Stretcher bring it back.</li>
+            <li>Don't discard the single Black Belt's Training, Janine's Secret Art, Secret Box or Dark Bell early.</li>
+            <li><strong>Lillie's</strong> draws 8 while you still have all 6 Prize cards. Play Items and attach first — the rest of your hand gets shuffled away.</li>
+            <li><strong>One Supporter a turn</strong> is the real decision: Lillie's, Cyrano, Boss's Orders, Janine's or Black Belt's.</li>
+            <li><strong>Trade → discard → N's PP Up</strong> powers Night Joker without spending your Supporter.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel__title">Winning</h3>
+          <ul class="panel__list">
+            <li>Take Prizes with Night Joker. Virtuous Flame (170, no drawback) is the default; save Rampaging Thunder and the +40 cards for 2-Prize ex.</li>
+            <li>Only Zoroark ex and Pecharunt ex give up 2 Prizes. Keep Zekrom and Reshiram benched and a second Zoroark ex loaded.</li>
+            <li>Boss's Orders (×4) sets the tempo: pull up something already damaged, or a 2-Prize ex a boosted Rampaging Thunder takes in one hit.</li>
+            <li>Pecharunt ex is the comeback attacker — 240 at 4 Prizes taken, 300 at 5.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel__title">Combos</h3>
+          <ul class="panel__list">
+            <li><strong>Chains + Mochi + Black Belt's:</strong> Mochi on a Benched Zoroark ex with DD → Subjugating Chains swaps it Active and Poisons it (an Ability, so the Supporter is free) → Black Belt's → Rampaging Thunder for 330.</li>
+            <li><strong>Janine's route:</strong> Janine's on the Active Zoroark ex Poisons it and turns on Mochi — but uses the Supporter.</li>
+            <li><strong>Recycle poison:</strong> Munkidori moves up to 3 poison counters off your Zoroark ex onto theirs.</li>
+            <li><strong>Dark Bell + Clutch:</strong> Yveltal stops the retreat, so the only way out of Confusion is a switch card.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel__title">Misplays</h3>
+          <ul class="panel__list">
+            <li>Copying Rampaging Thunder with no backup attacker ready.</li>
+            <li>N's PP Up on Munkidori, Pecharunt ex, Budew or Yveltal — it only reaches Benched N's Pokémon.</li>
+            <li>Chains or Janine's on Zekrom / Reshiram — they're Dragon type, so Mochi never turns on.</li>
+            <li>Black Belt's Training against a non-ex.</li>
+            <li>Dark Bell with Zekrom, Reshiram, Munkidori or Budew Active — they get Confused too.</li>
+            <li>Leaving Zoroark ex Active against Grass attackers.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="aside">When Zoroark ex copies an attack, Zoroark ex is the attacker — so Rampaging Thunder's "can't attack next turn" lands on it. Standard copy-attack ruling; the card text doesn't spell it out.</p>
+    </section>
 
-        <h3 class="sub-title">Opening</h3>
-        <ul class="plain reveal-on-scroll">
-          <li>Keep any hand with a Basic. The best keep has N's Zorua plus Buddy-Buddy Poffin, Ultra Ball or Poké Pad; the weakest is non-N's Basics (Munkidori, Pecharunt ex, Yveltal) with no Zorua and no search.</li>
-          <li>Buddy-Buddy Poffin only finds N's Zorua (70 HP) and Budew (30 HP) — every other Basic is over the 70-HP cap. Poké Pad finds any non-Rule-Box Pokémon, so not Zoroark ex or Pecharunt ex. Ultra Ball finds anything; Cyrano finds Zoroark ex and Pecharunt ex.</li>
-          <li><strong>Going first:</strong> no Supporter and no attack on turn 1 — just bench: Poffin, Poké Pad, Ultra Ball, as many Zorua as you can, Pecharunt ex if you have it.</li>
-          <li><strong>Going second:</strong> play a Supporter right away (Cyrano for Zoroark ex, or Lillie's Determination if the hand missed). With Budew Active, Itchy Pollen is free and stops your opponent's Items next turn.</li>
-          <li>Bench priority (5 slots): two N's Zorua → Budew if Poffin brought it → Pecharunt ex → N's Zekrom / N's Reshiram as Night Joker sources → Munkidori only if you can spare the Darkness attachment.</li>
-        </ul>
+    <section id="damage" aria-labelledby="damage-title">
+      <h2 id="damage-title" class="section-title">Damage routes</h2>
+      <p class="section-dek">Damage to the opponent's Active, before Weakness. Munkidori's Adrena-Brain adds 30 on top of any line; Pecharunt ex's Irritated Outburst scales with Prizes taken (180 / 240 / 300).</p>
+      <ol class="bars" role="list">
+            <li class="bar" style="--v:0.0303">
+              <span class="bar__value">10</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Budew — Itchy Pollen</strong><span>Free. Opponent can&#x27;t play Items next turn</span></span>
+            </li>
+            <li class="bar" style="--v:0.2121">
+              <span class="bar__value">70</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>N&#x27;s Zekrom — Shred</strong><span>CCC, or via Night Joker. Ignores effects on the Active</span></span>
+            </li>
+            <li class="bar" style="--v:0.3333">
+              <span class="bar__value">110</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Yveltal — Dark Feather</strong><span>DDC</span></span>
+            </li>
+            <li class="bar" style="--v:0.5152">
+              <span class="bar__value">170</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Night Joker → Virtuous Flame</strong><span>No drawback — the default attack</span></span>
+            </li>
+            <li class="bar" style="--v:0.6364">
+              <span class="bar__value">210</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Virtuous Flame + one +40</strong><span>Black Belt&#x27;s Training (vs. an ex) or Binding Mochi (Poisoned)</span></span>
+            </li>
+            <li class="bar" style="--v:0.7576">
+              <span class="bar__value">250</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Night Joker → Rampaging Thunder</strong><span>That Zoroark ex can&#x27;t attack next turn</span></span>
+            </li>
+            <li class="bar" style="--v:0.8788">
+              <span class="bar__value">290</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Rampaging Thunder + one +40</strong><span>Knocks Out a 280-HP ex</span></span>
+            </li>
+            <li class="bar" style="--v:1.0000">
+              <span class="bar__value">330</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Rampaging Thunder + Black Belt&#x27;s + Mochi</strong><span>Target must be an ex</span></span>
+            </li>
+      </ol>
+    </section>
 
-        <h3 class="sub-title">The engine</h3>
-        <ul class="plain reveal-on-scroll">
-          <li><strong>Trade every turn,</strong> with every Zoroark ex in play. Best discards: spare Darkness Energy (N's PP Up and Night Stretcher bring it back), extra Zorua once the bench is set, spent situational cards, late-game Budew.</li>
-          <li>Don't discard the single Black Belt's Training, Janine's Secret Art, Secret Box or Dark Bell early, or your last Cyrano before the ex line is found. Night Stretcher returns Pokémon or Basic Energy — not Trainers.</li>
-          <li><strong>Lillie's Determination</strong> draws 6, or 8 while you still have all 6 Prize cards — strongest before your first KO. Play Items and attach Energy first; everything left in hand gets shuffled away.</li>
-          <li><strong>One Supporter per turn</strong> is the real decision: Lillie's (refuel), Cyrano (ex bodies), Boss's Orders (target), Janine's Secret Art (energy) or Black Belt's Training (+40 vs. an ex).</li>
-          <li><strong>N's PP Up</strong> attaches a Basic Energy from the discard to a Benched N's Pokémon (Zorua, Zoroark ex, Zekrom, Reshiram) — the Trade → discard → PP Up loop powers Night Joker without spending your Supporter.</li>
-          <li><strong>Janine's Secret Art</strong> attaches a Darkness Energy from the deck to up to 2 Darkness Pokémon (Zorua, Zoroark ex, Pecharunt ex, Yveltal). If one is your Active, it's Poisoned — which turns on Binding Mochi.</li>
-          <li><strong>Secret Box</strong> (discard 3) always grabs Binding Mochi and N's Castle, plus the Item and Supporter of your choice — e.g. N's PP Up + Black Belt's Training for a planned knockout turn.</li>
-          <li><strong>N's Castle</strong> removes the Retreat Cost of all N's Pokémon — on both sides, so be careful in the mirror.</li>
-        </ul>
+    <section id="matchups" aria-labelledby="mu-title">
+      <h2 id="mu-title" class="section-title">Matchups</h2>
+      <p class="section-dek">N's Zoroark's win rate against the field after Pitch Black (Limitless, 2026‑09‑26). Left of the line loses, right of it wins. These numbers move week to week.</p>
+      <ul class="mus" role="list">
+            <li class="mu mu--pos" style="--d:0.4880">
+              <span class="mu__name">Dhelmise</span>
+              <span class="mu__chart" role="img" aria-label="62.2% win rate"><span class="mu__mid"></span><span class="mu__fill"></span></span>
+              <span class="mu__pct">62.2%</span>
+              <span class="mu__plan">Strong favourite in a small sample.</span>
+            </li>
+            <li class="mu mu--pos" style="--d:0.1880">
+              <span class="mu__name">Dragapult / Dusknoir</span>
+              <span class="mu__chart" role="img" aria-label="54.7% win rate"><span class="mu__mid"></span><span class="mu__fill"></span></span>
+              <span class="mu__pct">54.7%</span>
+              <span class="mu__plan"><span class="mu__rec">362‑294</span> Favourable. Same plan as vs. Dragapult ex.</span>
+            </li>
+            <li class="mu mu--pos" style="--d:0.0040">
+              <span class="mu__name">Grimmsnarl Froslass</span>
+              <span class="mu__chart" role="img" aria-label="50.1% win rate"><span class="mu__mid"></span><span class="mu__fill"></span></span>
+              <span class="mu__pct">50.1%</span>
+              <span class="mu__plan">Even.</span>
+            </li>
+            <li class="mu mu--neg" style="--d:0.1280">
+              <span class="mu__name">Dragapult ex</span>
+              <span class="mu__chart" role="img" aria-label="46.8% win rate"><span class="mu__mid"></span><span class="mu__fill"></span></span>
+              <span class="mu__pct">46.8%</span>
+              <span class="mu__plan"><span class="mu__rec">473‑514</span> Keep a second Zoroark ex powered on the Bench. Boosted Rampaging Thunder on their 2-Prize ex, Virtuous Flame on 1-Prize targets.</span>
+            </li>
+            <li class="mu mu--neg" style="--d:0.1440">
+              <span class="mu__name">Slowking</span>
+              <span class="mu__chart" role="img" aria-label="46.4% win rate"><span class="mu__mid"></span><span class="mu__fill"></span></span>
+              <span class="mu__pct">46.4%</span>
+              <span class="mu__plan"><span class="mu__rec">297‑337</span> 1-Prize copy-attack deck — Virtuous Flame is usually right; save Rampaging Thunder.</span>
+            </li>
+            <li class="mu mu--neg" style="--d:0.2720">
+              <span class="mu__name">Alakazam / Dudunsparce</span>
+              <span class="mu__chart" role="img" aria-label="43.2% win rate"><span class="mu__mid"></span><span class="mu__fill"></span></span>
+              <span class="mu__pct">43.2%</span>
+              <span class="mu__plan"><span class="mu__rec">316‑406</span> Lillie&#x27;s for 8 early, Boss&#x27;s Orders on key support Pokémon.</span>
+            </li>
+            <li class="mu mu--neg" style="--d:0.3000">
+              <span class="mu__name">Mega Excadrill ex</span>
+              <span class="mu__chart" role="img" aria-label="42.5% win rate"><span class="mu__mid"></span><span class="mu__fill"></span></span>
+              <span class="mu__pct">42.5%</span>
+              <span class="mu__plan"><span class="mu__rec">334‑447</span> Maximum Drilling can reach 330 and OHKO Zoroark ex. Plan two-hit KOs; Boss&#x27;s Orders for easier Prizes.</span>
+            </li>
+            <li class="mu mu--neg" style="--d:0.6640">
+              <span class="mu__name">Festival Lead</span>
+              <span class="mu__chart" role="img" aria-label="33.4% win rate"><span class="mu__mid"></span><span class="mu__fill"></span></span>
+              <span class="mu__pct">33.4%</span>
+              <span class="mu__plan"><span class="mu__rec">198‑391</span> Worst matchup: 1-Prize Grass attackers into Zoroark ex&#x27;s Grass weakness. Keep Zoroark ex benched; Budew and Yveltal slow them down.</span>
+            </li>
+      </ul>
+    </section>
 
-        <h3 class="sub-title">Damage routes</h3>
-        <p class="reveal-on-scroll">
-          Zekrom and Reshiram are attack sources, not attackers: Zoroark ex's
-          <strong>Night Joker</strong> (DD) uses Rampaging Thunder or Virtuous Flame straight from
-          the Bench, where they need no Energy at all. Damage to the opponent's Active, before
-          Weakness:
-        </p>
-        <table class="compare reveal-on-scroll">
-          <thead><tr><th>Damage</th><th>Line</th><th>Note</th></tr></thead>
-          <tbody>
-            <tr><td class="price">10</td><td>Budew — Itchy Pollen (free)</td><td>Opponent can't play Items next turn</td></tr>
-            <tr><td class="price">70</td><td>N's Zekrom — Shred (CCC, or via Night Joker)</td><td>Ignores effects on the opponent's Active</td></tr>
-            <tr><td class="price">110</td><td>Yveltal — Dark Feather (DDC)</td><td></td></tr>
-            <tr><td class="price">170</td><td>Night Joker → Virtuous Flame</td><td>No drawback — default attack</td></tr>
-            <tr><td class="price">210</td><td>Virtuous Flame + Black Belt's Training <em>or</em> + Binding Mochi (Poisoned)</td><td>+40 each; Black Belt's only vs. an ex</td></tr>
-            <tr><td class="price">250</td><td>Night Joker → Rampaging Thunder</td><td>That Zoroark ex can't attack next turn</td></tr>
-            <tr><td class="price">290</td><td>Rampaging Thunder + one +40 bonus</td><td>KOs a 280-HP ex</td></tr>
-            <tr><td class="price">330</td><td>Rampaging Thunder + Black Belt's + Binding Mochi</td><td>Target must be an ex</td></tr>
-            <tr><td class="price">+30</td><td>Munkidori — Adrena-Brain (before attacking)</td><td>Moves 3 damage counters; needs a Darkness Energy on Munkidori</td></tr>
-            <tr><td class="price">60×</td><td>Pecharunt ex — Irritated Outburst (DD)</td><td>60 per Prize your opponent has taken: 180 / 240 / 300</td></tr>
-          </tbody>
-        </table>
+    <section id="upgrades" aria-labelledby="up-title">
+      <h2 id="up-title" class="section-title">Upgrades</h2>
+      <p class="section-dek">To improve the list, swap these — ordered by how often the added card shows up in the five 2026 tournament lists checked on Limitless.</p>
+      <ol class="swaps" role="list">
+          <li class="swap">
+            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="img/cards/ultra-ball.webp" alt="Ultra Ball" loading="lazy" width="600" height="825"></div><span class="swap__name">4th Ultra Ball</span></div>
+            <span class="swap__arrow" aria-hidden="true">→</span>
+            <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="img/cards/fezandipiti-ex.webp" alt="Fezandipiti ex" loading="lazy" width="600" height="825"></div><span class="swap__name">Fezandipiti ex · SFA 38</span></div>
+            <p class="swap__why">Flip the Script draws 3 after one of your Pokémon is Knocked Out. Darkness type, so Subjugating Chains and Janine&#x27;s reach it; a third Cyrano target. In 5 of 5 lists checked.</p>
+          </li>
+          <li class="swap">
+            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="img/cards/poke-pad.webp" alt="Poké Pad" loading="lazy" width="600" height="825"><img class="swap__img" src="img/cards/bosss-orders.webp" alt="Boss&#x27;s Orders" loading="lazy" width="600" height="825"></div><span class="swap__name">4th Poké Pad + 4th Boss&#x27;s Orders</span></div>
+            <span class="swap__arrow" aria-hidden="true">→</span>
+            <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="img/cards/ns-darumaka.webp" alt="N&#x27;s Darumaka" loading="lazy" width="600" height="825"><img class="swap__img" src="img/cards/ns-darmanitan.webp" alt="N&#x27;s Darmanitan" loading="lazy" width="600" height="825"></div><span class="swap__name">N&#x27;s Darumaka · JTG 26 + N&#x27;s Darmanitan · JTG 27</span></div>
+            <p class="swap__why">A Benched Darmanitan gives Night Joker two more attacks (Back Draft: 30 per Basic Energy in the opponent&#x27;s discard). Both work with N&#x27;s PP Up and N&#x27;s Castle. In 4 of 5 lists.</p>
+          </li>
+          <li class="swap">
+            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="img/cards/munkidori.webp" alt="Munkidori" loading="lazy" width="600" height="825"></div><span class="swap__name">2nd Munkidori</span></div>
+            <span class="swap__arrow" aria-hidden="true">→</span>
+            <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="img/cards/special-red-card.webp" alt="Special Red Card" loading="lazy" width="600" height="825"></div><span class="swap__name">Special Red Card · CRI 82</span></div>
+            <p class="swap__why">Once your opponent has 3 or fewer Prizes left, cuts their hand to 3 — disruption on the turns that close games. In both Worlds 2026 lists checked.</p>
+          </li>
+      </ol>
+    </section>
 
-        <h3 class="sub-title">Win condition</h3>
-        <ul class="plain reveal-on-scroll">
-          <li>Take Prizes with Night Joker from a Zoroark ex with DD. Virtuous Flame (170, no drawback) is the default; save Rampaging Thunder and the +40 cards for 2-Prize ex, where three KOs win.</li>
-          <li>Only Zoroark ex and Pecharunt ex give up 2 Prizes. Keep Zekrom and Reshiram on the Bench as 1-Prize attack sources, and have a second Zoroark ex loaded so a locked or KO'd attacker is replaced immediately.</li>
-          <li>Boss's Orders (×4) sets the tempo: pull up something already damaged by Adrena-Brain or poison, or a 2-Prize ex that a boosted Rampaging Thunder takes in one hit.</li>
-          <li>Pecharunt ex is the comeback attacker — Irritated Outburst gets stronger the further behind you are (240 at 4 Prizes taken, 300 at 5).</li>
-        </ul>
+    <section id="sources" aria-labelledby="src-title">
+      <h2 id="src-title" class="section-title">Sources</h2>
+      <p class="section-dek">Card text for all 60 cards was checked against Limitless card pages on 2026‑09‑26. Legal in 2026 Standard: regulation marks H, I and J (paper since 2026‑04‑10).</p>
+      <ol class="sources">
+        <li><a class="inline-link" href="https://www.pokemon.com/us/pokemon-news/2026-pokemon-tcg-standard-format-rotation-announcement" target="_blank" rel="noopener">Pokémon.com — 2026 Standard rotation</a></li>
+        <li><a class="inline-link" href="https://play.limitlesstcg.com/decks?format=standard&amp;rotation=2026&amp;set=PBL" target="_blank" rel="noopener">Limitless — Standard meta share, Pitch Black</a></li>
+        <li><a class="inline-link" href="https://play.limitlesstcg.com/decks/n-zoroark/matchups?format=standard&amp;rotation=2026&amp;set=PBL" target="_blank" rel="noopener">Limitless — N's Zoroark matchups</a></li>
+        <li><a class="inline-link" href="https://limitlesstcg.com/decks/list/28759" target="_blank" rel="noopener">Svinhufvud, 9th Worlds 2026</a> · <a class="inline-link" href="https://limitlesstcg.com/decks/list/28800" target="_blank" rel="noopener">Lepine, 57th Worlds 2026</a></li>
+        <li><a class="inline-link" href="https://limitlesstcg.com/decks/list/25055" target="_blank" rel="noopener">Houston</a> · <a class="inline-link" href="https://limitlesstcg.com/decks/list/25923" target="_blank" rel="noopener">Querétaro</a> · <a class="inline-link" href="https://limitlesstcg.com/decks/list/24822" target="_blank" rel="noopener">Curitiba</a> regional lists</li>
+        <li><a class="inline-link" href="https://limitlesstcg.com/cards/PBL/75" target="_blank" rel="noopener">Limitless — Dark Bell, Pitch Black #75</a></li>
+        <li><a class="inline-link" href="https://www.tcgplayer.com/content/article/The-Best-Pok%C3%A9mon-TCG-Decks-Right-Now-September-2026/df18897b-3902-41b9-9eff-3b7fefd93820/" target="_blank" rel="noopener">TCGplayer — Best decks, September 2026</a></li>
+        <li><a class="inline-link" href="https://www.wargamer.com/pokemon-trading-card-game/mega-excadrill-ex" target="_blank" rel="noopener">Wargamer — Mega Excadrill ex</a></li>
+        <li><a class="inline-link" href="https://tcgdex.dev" target="_blank" rel="noopener">tcgdex — card images and data</a></li>
+      </ol>
+    </section>
+  </main>
 
-        <h3 class="sub-title">Key combos</h3>
-        <ul class="plain reveal-on-scroll">
-          <li><strong>Poison + Mochi + Black Belt's in one turn:</strong> Binding Mochi on a Benched Zoroark ex with DD → Pecharunt ex's Subjugating Chains switches it Active and Poisons it (an Ability, so your Supporter is still free) → Black Belt's Training → Rampaging Thunder for 330 on an ex, or Virtuous Flame for 250 with no lock.</li>
-          <li><strong>Janine's route:</strong> Janine's Secret Art on the Active Zoroark ex + one Benched Darkness Pokémon. The Active is Poisoned and Mochi turns on — but Janine's uses the Supporter, so no Black Belt's that turn.</li>
-          <li><strong>Recycle poison damage:</strong> poison puts counters on your own Zoroark ex between turns; Munkidori's Adrena-Brain moves up to 3 of them onto an opposing Pokémon — healing your attacker and adding 30 toward a KO.</li>
-          <li><strong>Yveltal's Clutch</strong> (D, 20) stops the Defending Pokémon from retreating next turn, holding a damaged target in place.</li>
-          <li><strong>Dark Bell</strong> confuses both non-Darkness Active Pokémon. Play it with Zoroark ex, Zorua or Yveltal Active — not Zekrom, Reshiram, Munkidori or Budew.</li>
-        </ul>
+  <footer class="foot">
+    <span>tcg.cativo.dev</span><span>checked 2026‑09‑26</span><span>Card images © Pokémon / Nintendo / Creatures / GAME FREAK, via tcgdex — reference only, not affiliated</span>
+  </footer>
 
-        <h3 class="sub-title">Common misplays</h3>
-        <ul class="plain reveal-on-scroll">
-          <li>Copying Rampaging Thunder with no backup attacker ready — that Zoroark ex can't attack next turn.</li>
-          <li>N's PP Up on Munkidori, Pecharunt ex, Budew or Yveltal — it only targets Benched N's Pokémon.</li>
-          <li>Subjugating Chains or Janine's on Zekrom/Reshiram — they're Dragon type, so they can't be Poisoned this way and Mochi never turns on.</li>
-          <li>Black Belt's Training against a non-ex, where it adds nothing.</li>
-          <li>Lillie's Determination with playable Items or an unused Energy attachment still in hand.</li>
-          <li>Munkidori as an attacker — Mind Bend needs Psychic Energy, which the list doesn't run. It's a Bench Adrena-Brain piece.</li>
-          <li>Leaving Zoroark ex Active against Grass attackers — it's weak to Grass.</li>
-        </ul>
-
-        <div class="note reveal-on-scroll">
-          <strong>Copied attacks:</strong> when Zoroark ex uses a copied attack, Zoroark ex is the
-          attacker — so Rampaging Thunder's "can't attack next turn" and Powerful Rage's damage
-          count apply to Zoroark ex. That follows standard copy-attack rulings; the card text
-          itself doesn't spell it out.
-        </div>
-      </section>
-
-      <section id="matchups">
-        <div class="section-head reveal-on-scroll">05 — The field</div>
-        <h2 class="section-title reveal-on-scroll">Matchups</h2>
-        <p class="reveal-on-scroll">
-          N's Zoroark's records against the most-played decks in Standard after Pitch Black
-          (Limitless, pulled 2026‑09‑26). Also listed there: Grimmsnarl Froslass 50.1% and
-          Dhelmise 62.2%. These numbers move week to week — recheck before an event.
-        </p>
-        <table class="compare reveal-on-scroll">
-          <thead><tr><th>Opponent</th><th>Record · win %</th><th>Plan</th></tr></thead>
-          <tbody>
-            <tr class="best"><td>Dragapult / Dusknoir</td><td class="price">362‑294 · 54.7%</td><td>Favorable. Same plan as vs. Dragapult ex.</td></tr>
-            <tr><td>Dragapult ex</td><td class="price">473‑514 · 46.8%</td><td>Close to even. Keep a second Zoroark ex powered on the Bench; boosted Rampaging Thunder on their 2-Prize ex, Virtuous Flame on 1-Prize targets.</td></tr>
-            <tr><td>Slowking</td><td class="price">297‑337 · 46.4%</td><td>Slightly unfavorable. 1-Prize copy-attack deck — Virtuous Flame is usually right; save Rampaging Thunder.</td></tr>
-            <tr><td>Alakazam / Dudunsparce</td><td class="price">316‑406 · 43.2%</td><td>Unfavorable. Lillie's for 8 early and Boss's Orders on key support Pokémon.</td></tr>
-            <tr><td>Mega Excadrill ex</td><td class="price">334‑447 · 42.5%</td><td>Unfavorable. Maximum Drilling can reach 330 and OHKO Zoroark ex; plan two-hit KOs and use Boss's Orders for easier Prizes.</td></tr>
-            <tr><td>Festival Lead</td><td class="price">198‑391 · 33.4%</td><td>Worst matchup — 1-Prize Grass attackers into Zoroark ex's Grass weakness. Keep Zoroark ex benched when you can; Budew's Item lock and Yveltal's Clutch slow them down.</td></tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section id="upgrades">
-        <div class="section-head reveal-on-scroll">06 — Later</div>
-        <h2 class="section-title reveal-on-scroll">Upgrades</h2>
-        <p class="reveal-on-scroll">
-          To improve the list, swap these — ordered by how often the added card shows up in
-          2026 tournament lists (five checked on Limitless).
-        </p>
-        <table class="compare reveal-on-scroll">
-          <thead><tr><th>Out</th><th>In</th><th>Why</th></tr></thead>
-          <tbody>
-            <tr><td>4th Ultra Ball</td><td>Fezandipiti ex <span style="color:var(--color-muted)">SFA 38</span></td><td>Flip the Script draws 3 after one of your Pokémon is KO'd. Darkness type, so Subjugating Chains and Janine's reach it; a third Cyrano target. In 5 of 5 lists.</td></tr>
-            <tr><td>4th Poké Pad + 4th Boss's Orders</td><td>N's Darumaka <span style="color:var(--color-muted)">JTG 26</span> + N's Darmanitan <span style="color:var(--color-muted)">JTG 27</span></td><td>A Benched Darmanitan gives Night Joker two more attacks (Back Draft: 30 per Basic Energy in the opponent's discard). Both work with N's PP Up and N's Castle. In 4 of 5 lists.</td></tr>
-            <tr><td>2nd Munkidori</td><td>Special Red Card <span style="color:var(--color-muted)">CRI 82</span></td><td>The second Munkidori can't attack here. Special Red Card, once your opponent has 3 or fewer Prizes left, cuts their hand to 3 — disruption on the turns that close games. In both Worlds 2026 lists checked.</td></tr>
-          </tbody>
-        </table>
-      </section>
-
-
-      <section id="sources">
-        <div class="section-head reveal-on-scroll">07 — Verification</div>
-        <h2 class="section-title reveal-on-scroll">Sources</h2>
-        <p class="reveal-on-scroll">Every figure in this guide traces to one of these, checked on 2026‑09‑26. Card text for all 60 cards was checked against Limitless card pages.</p>
-        <ol class="sources reveal-on-scroll">
-          <li><span class="n">01</span><span>Pokémon.com — <a class="inline-link" href="https://www.pokemon.com/us/pokemon-news/2026-pokemon-tcg-standard-format-rotation-announcement" target="_blank" rel="noopener">2026 Standard Format Rotation Announcement</a> — H/I/J marks and rotation dates.</span></li>
-          <li><span class="n">02</span><span>Limitless TCG — <a class="inline-link" href="https://play.limitlesstcg.com/decks?format=standard&amp;rotation=2026&amp;set=PBL" target="_blank" rel="noopener">Standard meta share, Pitch Black</a>.</span></li>
-          <li><span class="n">03</span><span>Limitless TCG — <a class="inline-link" href="https://play.limitlesstcg.com/decks/n-zoroark/matchups?format=standard&amp;rotation=2026&amp;set=PBL" target="_blank" rel="noopener">N's Zoroark matchups, Pitch Black</a>.</span></li>
-          <li><span class="n">04</span><span>Limitless TCG — <a class="inline-link" href="https://limitlesstcg.com/decks/list/28759" target="_blank" rel="noopener">Öjvind Svinhufvud, 9th Worlds 2026</a> and <a class="inline-link" href="https://limitlesstcg.com/decks/list/28800" target="_blank" rel="noopener">Piper Lepine, 57th Worlds 2026</a>.</span></li>
-          <li><span class="n">05</span><span>Limitless TCG — regional lists: <a class="inline-link" href="https://limitlesstcg.com/decks/list/25055" target="_blank" rel="noopener">Houston</a>, <a class="inline-link" href="https://limitlesstcg.com/decks/list/25923" target="_blank" rel="noopener">Querétaro</a>, <a class="inline-link" href="https://limitlesstcg.com/decks/list/24822" target="_blank" rel="noopener">Curitiba</a>.</span></li>
-          <li><span class="n">06</span><span>Limitless TCG — <a class="inline-link" href="https://limitlesstcg.com/cards/PBL/75" target="_blank" rel="noopener">Dark Bell, Pitch Black #75</a> (regulation J).</span></li>
-          <li><span class="n">07</span><span>TCGplayer — <a class="inline-link" href="https://www.tcgplayer.com/content/article/The-Best-Pok%C3%A9mon-TCG-Decks-Right-Now-September-2026/df18897b-3902-41b9-9eff-3b7fefd93820/" target="_blank" rel="noopener">The Best Pokémon TCG Decks Right Now, September 2026</a>.</span></li>
-          <li><span class="n">08</span><span>Wargamer — <a class="inline-link" href="https://www.wargamer.com/pokemon-trading-card-game/mega-excadrill-ex" target="_blank" rel="noopener">Mega Excadrill ex</a> (Maximum Drilling damage).</span></li>
-          <li><span class="n">09</span><span>tcgdex — <a class="inline-link" href="https://api.tcgdex.net/v2/en/sets/sv09" target="_blank" rel="noopener">N's Zoroark ex card data</a> (Journey Together #098/159).</span></li>
-        </ol>
-      </section>
-
-      <footer class="letter-close">
-        <p class="close-line">Test it on TCG Live first. If the combo feels right there, build the paper copy without hesitating.</p>
-        <p class="signoff">— C.</p>
-        <p class="postscript">P.S. — revisit this page whenever the format rotates again; every figure here has an expiration date.</p>
-        <p class="credit">Card image © 2025 Pokémon / Nintendo / Creatures / GAME FREAK. Used for reference; not affiliated.</p>
-      </footer>
-    </main>
-  </div>
+  <dialog class="viewer" id="viewer" aria-labelledby="viewer-name">
+    <div class="viewer__body">
+      <div class="viewer__art"><img id="viewer-img" alt=""></div>
+      <div class="viewer__text">
+        <p class="viewer__meta"><span id="viewer-qty"></span> · <span id="viewer-code"></span></p>
+        <h2 class="viewer__name" id="viewer-name"></h2>
+        <p class="viewer__role" id="viewer-role"></p>
+        <form method="dialog"><button class="btn" type="submit">Close</button></form>
+      </div>
+    </div>
+  </dialog>
 
   <script src="js/app.js"></script>
 </body>
