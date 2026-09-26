@@ -6,7 +6,7 @@
  * pre-emit critique: P5 H4 E4 S5 R4 V5
  */
 
-@import url("tokens.css");
+@import url("tokens.css?v=20260926");
 
 /* ───────── reset ───────── */
 * { box-sizing: border-box; }
