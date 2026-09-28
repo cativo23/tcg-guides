@@ -133,6 +133,13 @@
             <span class="slot__caption"><span class="slot__name">Boss&#x27;s Orders</span> <span class="slot__code">MEG 114</span></span>
           </li>
           <li class="slot" data-stack="2">
+            <button class="card" type="button" data-card data-name="Judge" data-code="POR 76" data-qty="2" data-role="Both players shuffle their hand in and draw 4. Cuts a big hand down; Trade refills yours." data-img="img/cards/judge.webp">
+              <span class="card__face"><img src="img/cards/judge.webp" alt="Judge" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×2</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Judge</span> <span class="slot__code">POR 76</span></span>
+          </li>
+          <li class="slot" data-stack="2">
             <button class="card" type="button" data-card data-name="Cyrano" data-code="SSP 170" data-qty="2" data-role="Search up to 3 Pokémon ex. In this list that means Zoroark ex and Pecharunt ex." data-img="img/cards/cyrano.webp">
               <span class="card__face"><img src="img/cards/cyrano.webp" alt="Cyrano" loading="lazy" decoding="async" width="600" height="825"></span>
               <span class="card__qty">×2</span>
@@ -167,10 +174,10 @@
             </button>
             <span class="slot__caption"><span class="slot__name">Buddy-Buddy Poffin</span> <span class="slot__code">TEF 144</span></span>
           </li>
-          <li class="slot" data-stack="4">
-            <button class="card" type="button" data-card data-name="Ultra Ball" data-code="MEG 131" data-qty="4" data-role="Discard 2, search for any Pokémon." data-img="img/cards/ultra-ball.webp">
+          <li class="slot" data-stack="3">
+            <button class="card" type="button" data-card data-name="Ultra Ball" data-code="MEG 131" data-qty="3" data-role="Discard 2, search for any Pokémon." data-img="img/cards/ultra-ball.webp">
               <span class="card__face"><img src="img/cards/ultra-ball.webp" alt="Ultra Ball" loading="lazy" decoding="async" width="600" height="825"></span>
-              <span class="card__qty">×4</span>
+              <span class="card__qty">×3</span>
             </button>
             <span class="slot__caption"><span class="slot__name">Ultra Ball</span> <span class="slot__code">MEG 131</span></span>
           </li>
@@ -187,13 +194,6 @@
               <span class="card__qty">×2</span>
             </button>
             <span class="slot__caption"><span class="slot__name">Night Stretcher</span> <span class="slot__code">ASC 196</span></span>
-          </li>
-          <li class="slot" data-stack="1">
-            <button class="card" type="button" data-card data-name="Dark Bell" data-code="PBL 75" data-qty="1" data-role="Both Active non-Darkness Pokémon are Confused. Play it with a Darkness Pokémon Active." data-img="img/cards/dark-bell.webp">
-              <span class="card__face"><img src="img/cards/dark-bell.webp" alt="Dark Bell" loading="lazy" decoding="async" width="600" height="825"></span>
-              <span class="card__qty">×1</span>
-            </button>
-            <span class="slot__caption"><span class="slot__name">Dark Bell</span> <span class="slot__code">PBL 75</span></span>
           </li>
           <li class="slot" data-stack="1">
             <button class="card" type="button" data-card data-name="Prime Catcher" data-code="TEF 157" data-qty="1" data-role="ACE SPEC. Switch in 1 of your opponent&#x27;s Benched Pokémon, then switch your own Active. A gust that leaves your Supporter free for Black Belt&#x27;s Training." data-img="img/cards/prime-catcher.webp">
@@ -246,15 +246,15 @@
 Trainer: 14
 4 Lillie&#x27;s Determination MEG 119
 4 Boss&#x27;s Orders MEG 114
+2 Judge POR 76
 2 Cyrano SSP 170
 1 Janine&#x27;s Secret Art SFA 59
 1 Black Belt&#x27;s Training JTG 143
 4 N&#x27;s PP Up JTG 153
 4 Buddy-Buddy Poffin TEF 144
-4 Ultra Ball MEG 131
+3 Ultra Ball MEG 131
 4 Poké Pad POR 81
 2 Night Stretcher ASC 196
-1 Dark Bell PBL 75
 1 Prime Catcher TEF 157
 2 Binding Mochi PRE 95
 2 N&#x27;s Castle JTG 152
@@ -305,6 +305,7 @@ Total Cards: 60</pre>
             <li>Keep any hand with a Basic. Best: N's Zorua plus Buddy-Buddy Poffin, Ultra Ball or Poké Pad.</li>
             <li><strong>Going first:</strong> you can't play a Supporter or attack on turn 1, so spend it benching: Poffin, Poké Pad, Ultra Ball, as many Zorua as you can, and Pecharunt ex if you have it.</li>
             <li><strong>Going second:</strong> play a Supporter right away. Cyrano finds Zoroark ex; Lillie's Determination fixes a hand that missed. Budew Active can Itchy Pollen for free.</li>
+            <li>Early on, Lillie's (8 cards) beats Judge (4). Save Judge for when their hand is bigger than yours.</li>
             <li>Bench order (5 slots): two Zorua → Budew → Pecharunt ex → Zekrom / Reshiram as Night Joker sources → Munkidori only if you can spare the attachment.</li>
           </ul>
         </article>
@@ -312,9 +313,9 @@ Total Cards: 60</pre>
           <h3 class="panel__title">The engine</h3>
           <ul class="panel__list">
             <li>Trade every turn with every Zoroark ex in play. Discard spare Darkness Energy first, since N's PP Up and Night Stretcher bring it back.</li>
-            <li>Don't discard the single Black Belt's Training, Janine's Secret Art, Prime Catcher or Dark Bell early.</li>
+            <li>Don't discard the single Black Belt's Training, Janine's Secret Art or Prime Catcher early.</li>
             <li>Lillie's draws 8 while you still have all 6 Prize cards. Play Items and attach first, because the rest of your hand gets shuffled away.</li>
-            <li>You get one Supporter a turn, and choosing it is most of the skill: Lillie's, Cyrano, Boss's Orders, Janine's or Black Belt's.</li>
+            <li>You get one Supporter a turn, and choosing it is most of the skill: Lillie's, Judge, Cyrano, Boss's Orders, Janine's or Black Belt's.</li>
             <li>Trade → discard → N's PP Up powers Night Joker without spending your Supporter.</li>
           </ul>
         </article>
@@ -325,6 +326,7 @@ Total Cards: 60</pre>
             <li>Only Zoroark ex and Pecharunt ex give up 2 Prizes. Keep Zekrom and Reshiram benched and a second Zoroark ex loaded.</li>
             <li>Boss's Orders (×4) and Prime Catcher set the tempo: pull up something already damaged, or a 2-Prize ex a boosted Rampaging Thunder takes in one hit.</li>
             <li>Pecharunt ex is the comeback attacker: 240 at 4 Prizes taken, 300 at 5.</li>
+            <li>Judge is the disruption. Play it right after a Knock Out, when they've saved up a Supporter, Boss's Orders or an answer; they redraw 4 blind.</li>
           </ul>
         </article>
         <article class="panel">
@@ -334,7 +336,7 @@ Total Cards: 60</pre>
             <li><strong>Prime Catcher + Black Belt's:</strong> Prime Catcher is an Item, so it pulls up their ex and switches your powered Zoroark ex Active without spending the Supporter. Play Black Belt's Training, then Rampaging Thunder for 290.</li>
             <li><strong>Janine's route:</strong> Janine's on the Active Zoroark ex Poisons it and turns on Mochi, but it uses your Supporter.</li>
             <li><strong>Recycle poison:</strong> Munkidori moves up to 3 poison counters off your Zoroark ex onto theirs.</li>
-            <li><strong>Dark Bell + Clutch:</strong> Yveltal stops the retreat, so the only way out of Confusion is a switch card.</li>
+            <li><strong>Judge + Trade:</strong> both hands drop to 4, then each Zoroark ex in play Trades (discard an Energy, draw 2). You dig deeper and refill Energy with N's PP Up; they're stuck with 4 blind cards.</li>
           </ul>
         </article>
         <article class="panel">
@@ -344,7 +346,7 @@ Total Cards: 60</pre>
             <li>N's PP Up on Munkidori, Pecharunt ex, Budew or Yveltal. It only reaches Benched N's Pokémon.</li>
             <li>Chains or Janine's on Zekrom or Reshiram. They're Dragon type, so Mochi never turns on.</li>
             <li>Black Belt's Training against a non-ex.</li>
-            <li>Dark Bell with Zekrom, Reshiram, Munkidori or Budew Active. They get Confused too.</li>
+            <li>Judge when your own hand already has the KO in it. It shuffles your cards away too, so play Items and attach before it.</li>
             <li>Leaving Zoroark ex Active against Grass attackers.</li>
           </ul>
         </article>
@@ -459,7 +461,7 @@ Total Cards: 60</pre>
       <p class="section-dek">To improve the list, make these swaps. They're ordered by how often the added card shows up in the five 2026 tournament lists checked on Limitless.</p>
       <ol class="swaps" role="list">
           <li class="swap">
-            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="img/cards/ultra-ball.webp" alt="Ultra Ball" loading="lazy" width="600" height="825"></div><span class="swap__name">4th Ultra Ball</span></div>
+            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="img/cards/ultra-ball.webp" alt="Ultra Ball" loading="lazy" width="600" height="825"></div><span class="swap__name">3rd Ultra Ball</span></div>
             <span class="swap__arrow" aria-hidden="true">→</span>
             <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="img/cards/fezandipiti-ex.webp" alt="Fezandipiti ex" loading="lazy" width="600" height="825"></div><span class="swap__name">Fezandipiti ex · SFA 38</span></div>
             <p class="swap__why">Flip the Script draws 3 after one of your Pokémon is Knocked Out. Darkness type, so Subjugating Chains and Janine&#x27;s reach it; a third Cyrano target. In 5 of 5 lists checked.</p>
@@ -488,7 +490,7 @@ Total Cards: 60</pre>
         <li><a class="inline-link" href="https://play.limitlesstcg.com/decks/n-zoroark/matchups?format=standard&amp;rotation=2026&amp;set=PBL" target="_blank" rel="noopener">Limitless — N's Zoroark matchups</a></li>
         <li><a class="inline-link" href="https://limitlesstcg.com/decks/list/28759" target="_blank" rel="noopener">Svinhufvud, 9th Worlds 2026</a> · <a class="inline-link" href="https://limitlesstcg.com/decks/list/28800" target="_blank" rel="noopener">Lepine, 57th Worlds 2026</a></li>
         <li><a class="inline-link" href="https://limitlesstcg.com/decks/list/25055" target="_blank" rel="noopener">Houston</a> · <a class="inline-link" href="https://limitlesstcg.com/decks/list/25923" target="_blank" rel="noopener">Querétaro</a> · <a class="inline-link" href="https://limitlesstcg.com/decks/list/24822" target="_blank" rel="noopener">Curitiba</a> regional lists</li>
-        <li><a class="inline-link" href="https://limitlesstcg.com/cards/PBL/75" target="_blank" rel="noopener">Limitless — Dark Bell, Pitch Black #75</a></li>
+        <li><a class="inline-link" href="https://limitlesstcg.com/cards/POR/76" target="_blank" rel="noopener">Limitless — Judge, Perfect Order #76</a></li>
         <li><a class="inline-link" href="https://www.tcgplayer.com/content/article/The-Best-Pok%C3%A9mon-TCG-Decks-Right-Now-September-2026/df18897b-3902-41b9-9eff-3b7fefd93820/" target="_blank" rel="noopener">TCGplayer — Best decks, September 2026</a></li>
         <li><a class="inline-link" href="https://www.wargamer.com/pokemon-trading-card-game/mega-excadrill-ex" target="_blank" rel="noopener">Wargamer — Mega Excadrill ex</a></li>
         <li><a class="inline-link" href="https://tcgdex.dev" target="_blank" rel="noopener">tcgdex — card images and data</a></li>
