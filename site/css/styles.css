@@ -6,7 +6,7 @@
  * pre-emit critique: P5 H4 E4 S5 R4 V5
  */
 
-@import url("tokens.css?v=20260926b");
+@import url("tokens.css?v=20261012");
 
 /* ───────── reset ───────── */
 * { box-sizing: border-box; }
@@ -685,3 +685,87 @@ a.inline-link:hover { text-decoration-thickness: 2px; }
 @media (prefers-reduced-motion: reduce) {
   .viewer[open] { animation: none; }
 }
+
+/* ───────── guide hub (/) — Index-First · N9 edge-aligned · Ft2 ─────────
+ * Hallmark · macrostructure: Index-First · nav: N9 Edge-aligned minimal (wordmark left, meta right, no links)
+ * footer: Ft2 Inline single line · each row carries its deck's theme via [data-deck] on the <li>
+ */
+.topbar {
+  max-width: 76rem;
+  margin-inline: auto;
+  padding: var(--space-lg);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+.topbar__mark { font-family: var(--font-display); font-weight: 700; color: var(--color-ink); text-decoration: none; white-space: nowrap; }
+.topbar__meta { font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted); white-space: nowrap; }
+@media (max-width: 30rem) { .topbar__meta { display: none; } }
+
+main.hub { padding-top: var(--space-2xl); }
+.hub__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--text-3xl);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+  margin: 0 0 var(--space-sm);
+}
+.hub__intro { max-width: 58ch; margin: 0 0 var(--space-2xl); }
+
+.guides { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--color-rule); }
+.guide { border-bottom: 1px solid var(--color-rule); }
+.guide__link {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  grid-template-areas: "art body go";
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-lg) var(--space-md);
+  text-decoration: none;
+  color: inherit;
+  background: var(--color-paper);
+  border-left: 3px solid transparent;
+  transition: background-color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out);
+}
+.guide__link:hover, .guide__link.is-hover { background: var(--color-paper-2); border-left-color: var(--color-accent); }
+.guide__link:focus-visible, .guide__link.is-focus { outline: 2px solid var(--color-focus); outline-offset: -2px; }
+.guide__link:active, .guide__link.is-active { background: var(--color-paper-3); }
+.guide__art { grid-area: art; width: 100%; aspect-ratio: 63 / 88; border-radius: 6px; box-shadow: var(--shadow-card), 0 0 0 1px var(--color-rule); transition: transform var(--dur-short) var(--ease-out); }
+.guide__link:hover .guide__art { transform: translateY(-3px) rotate(-2deg); }
+.guide__body { grid-area: body; min-width: 0; display: grid; gap: var(--space-2xs); }
+.guide__name { font-family: var(--font-display); font-weight: 700; font-style: normal; font-size: var(--text-xl); line-height: 1.1; color: var(--color-ink); margin: 0; overflow-wrap: anywhere; }
+.guide__name .accent { color: var(--color-accent); }
+.guide__status {
+  justify-self: start;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border: 1px solid oklch(from var(--color-accent) l c h / 0.5);
+  border-radius: var(--radius-pill);
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+.guide__meta { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-muted); font-variant-numeric: tabular-nums; }
+.guide__dek { font-size: var(--text-sm); color: var(--color-ink-2); max-width: 62ch; margin: 0; }
+.guide__go { grid-area: go; font-family: var(--font-mono); font-size: var(--text-xl); color: var(--color-accent); transition: transform var(--dur-short) var(--ease-out); }
+.guide__link:hover .guide__go { transform: translateX(4px); }
+@media (max-width: 40rem) {
+  .guide__link { grid-template-columns: 3.5rem minmax(0, 1fr); grid-template-areas: "art body"; gap: var(--space-md); padding-inline: var(--space-xs); }
+  .guide__go { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .guide__link:hover .guide__art, .guide__link:hover .guide__go { transform: none; }
+}
+
+/* pill nav back-link: arrow only on narrow screens */
+@media (max-width: 30rem) {
+  .pill__mark { display: inline; }
+  .pill__mark-text { display: none; }
+}
+

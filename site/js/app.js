@@ -1,4 +1,4 @@
-// N's Zoroark ex guide — active nav pill, chart reveal, card viewer, copy-decklist.
+// tcg.cativo.dev deck guides — active nav pill, chart reveal, card viewer, copy-decklist.
 // No frameworks; IntersectionObserver only (no scroll listeners).
 
 (function () {
