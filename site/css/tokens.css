@@ -1,4 +1,4 @@
-/* tokens.css — portable design tokens for the N's Zoroark ex guide
+/* tokens.css — design tokens for tcg.cativo.dev (base = N's Zoroark ex guide; per-deck overrides at the bottom)
  * theme: custom · vibe: "card-accurate teal & crimson, technical reference"
  * palette sampled from the real N's Zoroark ex card art (Journey Together #098)
  * axes: dark / geometric-sans / chromatic-teal ~195° (+ crimson secondary ~25°)
@@ -81,4 +81,35 @@
   --z-raised: 10;
   --z-sticky: 200;
   --z-tooltip: 600;
+}
+
+/* ── deck theme: Dragapult ex ──────────────────────────────────────────────
+ * palette sampled from the Dragapult ex card (Twilight Masquerade #130):
+ * Dragon-type gold frame as the accent, Tera-crystal crimson as the secondary.
+ * warm dark paper (hue ~70) so the page reads apart from Zoroark's teal.
+ * contrast checked: muted 5.5:1 on paper · accent 10.7:1 · ink on accent-2 4.8:1.
+ * chart poles stay site-wide — favourable/unfavourable keep one meaning on every guide.
+ */
+[data-deck="dragapult"] {
+  --color-paper:      oklch(13% 0.012 70);
+  --color-paper-2:    oklch(17% 0.014 70);
+  --color-paper-3:    oklch(21% 0.014 70);
+  --color-ink:        oklch(95% 0.008 80);
+  --color-ink-2:      oklch(74% 0.008 80);
+  --color-rule:       oklch(30% 0.014 70);
+  --color-rule-2:     oklch(24% 0.014 70);
+  --color-muted:      oklch(62% 0.012 70);
+  --color-neutral:    oklch(46% 0.012 70);
+
+  --color-accent:     oklch(80% 0.13 85);
+  --color-accent-ink: oklch(14% 0.02 70);
+  --color-focus:      oklch(86% 0.14 88);
+  --color-accent-2:   oklch(54% 0.19 22);
+
+  --color-mat:        oklch(15% 0.02 60);
+  --color-mat-line:   oklch(34% 0.05 85);
+  --foil-a: oklch(from var(--color-accent) 88% 0.14 h / 0.55);
+  --foil-b: oklch(86% 0.12 190 / 0.4);
+  --foil-c: oklch(from var(--color-accent-2) 80% 0.14 h / 0.45);
+  --color-glow: oklch(from var(--color-accent) l c h / 0.30);
 }
