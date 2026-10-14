@@ -20,6 +20,7 @@
       <a href="#play">Play</a>
       <a href="#damage">Damage</a>
       <a href="#matchups">Matchups</a>
+      <a href="#antibrick">Anti-brick</a>
       <a href="#upgrades">Upgrades</a>
     </div>
   </nav>
@@ -232,7 +233,7 @@
         </ul>
       </div>
 
-      <p class="mat__note">Tap a card for what it does here. Art shows the printings in this copy of the deck; set codes are the TCG Live import codes.</p>
+      <p class="mat__note">Tap a card for what it does here. Art shows the printings in this copy of the deck; set codes are the TCG Live import codes. <a class="inline-link" href="#upgrades">Upgrades</a> lists the four swaps to the recommended 60.</p>
       <pre id="decklist-plaintext" hidden>Pokémon: 16
 4 N&#x27;s Zorua JTG 97
 4 N&#x27;s Zoroark ex JTG 98
@@ -492,41 +493,68 @@ Total Cards: 60</pre>
       </ul>
     </section>
 
+    <section id="antibrick" aria-labelledby="ab-title">
+      <h2 id="ab-title" class="section-title">Anti-brick</h2>
+      <p class="section-dek">How often the opening 8 cards (7 plus the first draw, after any mulligan) miss. Energy outs: Darkness Energy, Janine&#x27;s Secret Art, Energy Search. Draw outs: Lillie&#x27;s, Judge, Secret Box. Trade and Fezandipiti ex don&#x27;t count, so the real numbers are a little better. Exact hypergeometric odds, 2026‑10‑14.</p>
+      <dl class="stats">
+        <div class="stats__cell"><dt>No Energy out</dt><dd>19.0%<small>was 26.7%</small></dd></div>
+        <div class="stats__cell"><dt>No draw out</dt><dd>36.4%<small>was 42.6%</small></dd></div>
+        <div class="stats__cell"><dt>Neither</dt><dd>5.2%<small>was 9.4%</small></dd></div>
+        <div class="stats__cell"><dt>Neither by turn 2</dt><dd>3.4%<small>was 6.7%</small></dd></div>
+      </dl>
+      <div class="panels">
+        <article class="panel">
+          <h3 class="panel__title">Never get stuck</h3>
+          <ul class="panel__list">
+            <li><strong>Never leave one Pokémon in play.</strong> Bench at least one extra Basic every turn. With an empty Bench nothing gets you out: Castle needs somewhere to retreat to, and Chains needs a Benched Darkness Pokémon.</li>
+            <li>An unpowered Zoroark ex can&#x27;t retreat (Retreat 2). Without Castle, Chains or Secret Box in hand, check whether this turn&#x27;s attach should pay that retreat before you put it on the Bench.</li>
+            <li>Turn 1 Energy goes on the Active Zorua, or on something Castle or Chains can bring up next turn.</li>
+            <li>Subjugating Chains only swaps in a <strong>Darkness</strong> Pokémon: Zoroark ex, Yveltal, Fezandipiti ex. Never Zekrom or Reshiram, which are Dragon.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel__title">Dig every turn</h3>
+          <ul class="panel__list">
+            <li>Fixed order: Items and attach, then the Supporter, then Trade. Lillie&#x27;s shuffles your hand away.</li>
+            <li>No Energy in hand: Energy Search, or Janine&#x27;s as the Supporter. Energy in the discard: N&#x27;s PP Up or Night Stretcher.</li>
+            <li>Secret Box: never discard your only Energy to it. It finds one Supporter, so pick Lillie&#x27;s or Janine&#x27;s, not both.</li>
+            <li>Energy Search and Secret Box are Items: an opposing Budew&#x27;s Itchy Pollen turns them off for a turn.</li>
+            <li>Bench Fezandipiti ex and Pecharunt ex only for this turn or the next. Each gives up 2 Prizes.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
     <section id="upgrades" aria-labelledby="up-title">
       <h2 id="up-title" class="section-title">Upgrades</h2>
-      <p class="section-dek">Make these swaps in order; each one leaves a legal 60. Counts are from 119 N's Zoroark lists: 71 from Brisbane, Frankfurt and Recife (30th Celebration, 2026‑09‑26 to 10‑03) and 48 earlier ones. Small samples: a direction, not proof.</p>
+      <p class="section-dek">The list a three-builder team and a red team settled on (2026‑10‑14), as swaps from the 60 on the mat. Make them in order; each leaves a legal 60. Total cost $10.67, and the Energy Search are already in the collection. Shares are from 119 N&#x27;s Zoroark Regional lists.</p>
       <ol class="swaps" role="list">
           <li class="swap">
-            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="/img/cards/ns-pp-up.webp" alt="N&#x27;s PP Up" loading="lazy" width="600" height="825"><img class="swap__img" src="/img/cards/poke-pad.webp" alt="Poké Pad" loading="lazy" width="600" height="825"></div><span class="swap__name">4th N&#x27;s PP Up + 4th Poké Pad</span></div>
+            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="/img/cards/poke-pad.webp" alt="Poké Pad" loading="lazy" width="600" height="825"></div><span class="swap__name">3rd and 4th Poké Pad</span></div>
             <span class="swap__arrow" aria-hidden="true">→</span>
-            <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="/img/cards/team-rockets-watchtower.webp" alt="Team Rocket&#x27;s Watchtower" loading="lazy" width="600" height="825"></div><span class="swap__name">2 Team Rocket&#x27;s Watchtower · DRI 180</span></div>
-            <p class="swap__why">Colorless Pokémon in play have no Abilities, so Trade keeps working while their Dudunsparce, Kangaskhan and Meowth ex switch off. Four Stadiums also win the fight against Risky Ruins, Jamming Tower and Festival Grounds. In 94 of 119 lists; 108 of 119 play exactly 3 PP Up.</p>
-          </li>
-          <li class="swap">
-            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="/img/cards/judge.webp" alt="Judge" loading="lazy" width="600" height="825"></div><span class="swap__name">2nd Judge</span></div>
-            <span class="swap__arrow" aria-hidden="true">→</span>
-            <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="/img/cards/special-red-card.webp" alt="Special Red Card" loading="lazy" width="600" height="825"></div><span class="swap__name">Special Red Card · CRI 82</span></div>
-            <p class="swap__why">Once your opponent has 3 or fewer Prizes left, their hand goes to the bottom of the deck and they draw 3. It&#x27;s an Item, so your Supporter stays free for Black Belt&#x27;s on the closing turns. In 117 of 119 lists.</p>
-          </li>
-          <li class="swap">
-            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="/img/cards/ultra-ball.webp" alt="Ultra Ball" loading="lazy" width="600" height="825"></div><span class="swap__name">3rd Ultra Ball</span></div>
-            <span class="swap__arrow" aria-hidden="true">→</span>
-            <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="/img/cards/fezandipiti-ex.webp" alt="Fezandipiti ex" loading="lazy" width="600" height="825"></div><span class="swap__name">Fezandipiti ex · ASC 142 or SFA 38</span></div>
-            <p class="swap__why">Flip the Script draws 3 after one of your Pokémon is Knocked Out, and it&#x27;s a third Cyrano target. In 110 of 119 lists. Fighting weakness: keep it off the Bench against Lucario.</p>
-          </li>
-          <li class="swap">
-            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="/img/cards/bosss-orders.webp" alt="Boss&#x27;s Orders" loading="lazy" width="600" height="825"></div><span class="swap__name">4th Boss&#x27;s Orders</span></div>
-            <span class="swap__arrow" aria-hidden="true">→</span>
-            <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="/img/cards/tatsugiri.webp" alt="Tatsugiri" loading="lazy" width="600" height="825"></div><span class="swap__name">Tatsugiri · TWM 131</span></div>
-            <p class="swap__why">Attract Customers: while Active, once a turn look at the top 6 cards and take a Supporter. 70 HP, so Poffin and Poké Pad find it; Dragon type, so Watchtower doesn&#x27;t switch it off. Prime Catcher keeps you at 4 gust cards. In 12 of the 19 top‑64 lists.</p>
+            <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="/img/cards/energy-search.webp" alt="Energy Search" loading="lazy" width="600" height="825"></div><span class="swap__name">2 Energy Search · POR 72</span></div>
+            <p class="swap__why">The direct fix for turns with no Energy: a Basic Energy from the deck to your hand. With Janine&#x27;s and 8 Darkness Energy that&#x27;s 11 outs, which takes a no-Energy opening from 26.7% to 19.0%. Already owned.</p>
           </li>
           <li class="swap">
             <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="/img/cards/prime-catcher.webp" alt="Prime Catcher" loading="lazy" width="600" height="825"></div><span class="swap__name">Prime Catcher</span></div>
             <span class="swap__arrow" aria-hidden="true">→</span>
             <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="/img/cards/secret-box.webp" alt="Secret Box" loading="lazy" width="600" height="825"></div><span class="swap__name">Secret Box · TWM 163</span></div>
-            <p class="swap__why">Discard 3 to search an Item, a Tool, a Supporter and a Stadium: Mochi, Black Belt&#x27;s and a Stadium from one card. The data doesn&#x27;t favour it over Unfair Stamp (68% of top‑64 lists play it against 81% of the rest); it&#x27;s here because it&#x27;s cheaper and easier to find. Until you have one, Prime Catcher stays.</p>
+            <p class="swap__why">ACE SPEC. Discard 3, then search an Item, a Tool, a Supporter and a Stadium: Lillie&#x27;s or Black Belt&#x27;s, Mochi and Castle from one card. Played in 77% of lists; Prime Catcher in 1 of 119.</p>
+          </li>
+          <li class="swap">
+            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="/img/cards/bosss-orders.webp" alt="Boss&#x27;s Orders" loading="lazy" width="600" height="825"></div><span class="swap__name">4th Boss&#x27;s Orders</span></div>
+            <span class="swap__arrow" aria-hidden="true">→</span>
+            <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="/img/cards/fezandipiti-ex.webp" alt="Fezandipiti ex" loading="lazy" width="600" height="825"></div><span class="swap__name">Fezandipiti ex · SFA 38</span></div>
+            <p class="swap__why">Flip the Script draws 3 on the turn after one of your Pokémon is Knocked Out, without using your Supporter, which stays free for Boss&#x27;s or Black Belt&#x27;s. Find it with Ultra Ball, Cyrano or Secret Box (Cyrano). Fighting weakness: keep it off the Bench against Lucario. In 90% of lists.</p>
+          </li>
+          <li class="swap">
+            <div class="swap__side swap__side--out"><span class="swap__tag">Out</span><div class="swap__cards"><img class="swap__img" src="/img/cards/ns-pp-up.webp" alt="N&#x27;s PP Up" loading="lazy" width="600" height="825"></div><span class="swap__name">4th N&#x27;s PP Up</span></div>
+            <span class="swap__arrow" aria-hidden="true">→</span>
+            <div class="swap__side swap__side--in"><span class="swap__tag">In</span><div class="swap__cards"><img class="swap__img" src="/img/cards/special-red-card.webp" alt="Special Red Card" loading="lazy" width="600" height="825"></div><span class="swap__name">Special Red Card · CRI 82</span></div>
+            <p class="swap__why">Once your opponent has 3 or fewer Prizes left, their hand goes to the bottom of the deck and they draw 3. It&#x27;s an Item, so the Supporter stays free on the closing turns. In 97% of lists.</p>
           </li>
       </ol>
+      <p class="aside"><strong>Kept on purpose:</strong> 2 Munkidori and 2 Night Stretcher, which matter most against Dragapult. <strong>Sideboard, not core:</strong> Team Rocket&#x27;s Watchtower in place of a Castle if your local plays a lot of Dudunsparce or Meowth ex; Tatsugiri TWM 131 if you can find one. <strong>Tested and dropped as a core:</strong> a Toxtricity PFL 68 Energy engine (its counters put Zoroark ex in KO range) and Mega Darkrai ex + Dark Bell (rarely ready in time). Each is at most a 2–3 card test package.</p>
     </section>
 
     <section id="sources" aria-labelledby="src-title">
@@ -548,7 +576,7 @@ Total Cards: 60</pre>
   </main>
 
   <footer class="foot">
-    <span><a class="inline-link" href="/">All deck guides</a></span><span>checked 2026‑10‑06</span><span>Card images © Pokémon / Nintendo / Creatures / GAME FREAK, via tcgdex. Reference only; not affiliated with Pokémon</span>
+    <span><a class="inline-link" href="/">All deck guides</a></span><span>checked 2026‑10‑14</span><span>Card images © Pokémon / Nintendo / Creatures / GAME FREAK, via tcgdex. Reference only; not affiliated with Pokémon</span>
   </footer>
 
   <dialog class="viewer" id="viewer" aria-labelledby="viewer-name">
