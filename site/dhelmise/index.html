@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en" data-deck="dhelmise">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dhelmise · Deck Guide</title>
+  <meta name="description" content="Dhelmise's Vengeful Anchor does 30, plus 140 more once 4 Hide 'n' Sneak Pokémon sit in the discard pile. Gwynn and Explorer's Guidance put them there on purpose; at 6, Sinistcha's Matcha Spin wipes the board.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23151225'/%3E%3Cpath d='M8 22 L16 8 L24 22' fill='none' stroke='%23d98cc9' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css?v=20261012">
+</head>
+<body>
+  <nav class="pill" aria-label="Sections">
+    <a class="pill__mark" href="/" aria-label="All deck guides"><span aria-hidden="true">←</span><span class="pill__mark-text"> Guides</span></a>
+    <div class="pill__links">
+      <a href="#deck">Deck</a>
+      <a href="#engine">Engine</a>
+      <a href="#play">Play</a>
+      <a href="#damage">Damage</a>
+      <a href="#matchups">Matchups</a>
+      <a href="#buy">Buy</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="masthead">
+      <div class="masthead__text">
+      <p class="masthead__line">Candidate · not yet built · 2026 Standard · 30th Celebration · checked 2026‑11‑03</p>
+      <h1 class="masthead__title"><span class="accent">Dhelmise</span></h1>
+      <p class="masthead__dek">Vengeful Anchor does 30, plus 140 more once 4 Hide 'n' Sneak Pokémon — Shuppet, Banette, Poltchageist or Sinistcha — sit in the discard pile. Gwynn and Explorer's Guidance put them there on purpose; at 6, Sinistcha's Matcha Spin drops 4 counters on everything the opponent has in play.</p>
+      <dl class="stats">
+        <div class="stats__cell"><dt>Meta share</dt><dd>4.85%<small>4th in Standard, 30C</small></dd></div>
+        <div class="stats__cell"><dt>Win rate</dt><dd>50.52%<small>Limitless, 30th Celebration</small></dd></div>
+        <div class="stats__cell"><dt>vs. N&#x27;s Zoroark ex</dt><dd>32.5%<small>50‑104, from the Zoroark guide</small></dd></div>
+        <div class="stats__cell"><dt>Vengeful Anchor</dt><dd>170<small>30 + 140, at 4+ Hide &#x27;n&#x27; Sneak in discard</small></dd></div>
+      </dl>
+      </div>
+      <div class="fan" aria-hidden="true">
+        <div class="fan__card fan__card--l" data-tilt><img src="/img/cards/shuppet.webp" alt="" width="600" height="825"><span class="foil"></span></div>
+        <div class="fan__card fan__card--r" data-tilt><img src="/img/cards/sinistcha.webp" alt="" width="600" height="825"><span class="foil"></span></div>
+        <div class="fan__card fan__card--c" data-tilt><img src="/img/cards/dhelmise.webp" alt="" width="600" height="825" fetchpriority="high"><span class="foil"></span></div>
+      </div>
+    </header>
+
+    <section id="deck" class="mat" aria-labelledby="deck-title">
+      <div class="mat__head">
+        <h2 id="deck-title" class="mat__title">The mat</h2>
+        <button class="btn" data-copy-decklist type="button">Copy list for TCG Live</button>
+      </div>
+
+      <div class="zone">
+        <h3 class="zone__title">Pokémon <span>26</span></h3>
+        <ul class="grid" role="list">
+          <li class="slot" data-stack="4" data-foil>
+            <button class="card" type="button" data-card data-name="Dhelmise" data-code="PBL 39" data-qty="4" data-role="Vengeful Anchor: 30, plus 140 more once 4 Hide &#x27;n&#x27; Sneak Pokémon are in your discard pile. Retreat 3 and weak to Darkness, so keep it Benched until the count is ready." data-img="/img/cards/dhelmise.webp">
+              <span class="card__face"><img src="/img/cards/dhelmise.webp" alt="Dhelmise" loading="lazy" decoding="async" width="600" height="825"><span class="foil"></span></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Dhelmise</span> <span class="slot__code">PBL 39</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Shuppet" data-code="PBL 33" data-qty="4" data-role="Hide &#x27;n&#x27; Sneak blocks attack and Ability effects aimed at it, not damage. Worth more discarded via Gwynn or Explorer&#x27;s Guidance than played out." data-img="/img/cards/shuppet.webp">
+              <span class="card__face"><img src="/img/cards/shuppet.webp" alt="Shuppet" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Shuppet</span> <span class="slot__code">PBL 33</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Banette" data-code="PBL 34" data-qty="4" data-role="Puppet Pull hits for 80 and searches any card, but evolving costs a turn. Most copies are worth more fueling Vengeful Anchor from the discard pile early." data-img="/img/cards/banette.webp">
+              <span class="card__face"><img src="/img/cards/banette.webp" alt="Banette" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Banette</span> <span class="slot__code">PBL 34</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Poltchageist" data-code="PBL 5" data-qty="4" data-role="Retreat 0, so it&#x27;s a safe Active early. Furtive Drop chips 1 free counter, but like the others it&#x27;s worth more discarded for the Vengeful Anchor count." data-img="/img/cards/poltchageist.webp">
+              <span class="card__face"><img src="/img/cards/poltchageist.webp" alt="Poltchageist" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Poltchageist</span> <span class="slot__code">PBL 5</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Sinistcha" data-code="PBL 6" data-qty="4" data-role="Matcha Spin: at 6+ Hide &#x27;n&#x27; Sneak Pokémon in your discard pile, 4 damage counters on every one of your opponent&#x27;s Pokémon at once. The deck&#x27;s real finisher against a wide Bench." data-img="/img/cards/sinistcha.webp">
+              <span class="card__face"><img src="/img/cards/sinistcha.webp" alt="Sinistcha" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Sinistcha</span> <span class="slot__code">PBL 6</span></span>
+          </li>
+          <li class="slot" data-stack="2">
+            <button class="card" type="button" data-card data-name="Dunsparce" data-code="JTG 120" data-qty="2" data-role="Evolves into Dudunsparce. Trading Places is an attack that swaps it to the Bench and ends the turn." data-img="/img/cards/dunsparce.webp">
+              <span class="card__face"><img src="/img/cards/dunsparce.webp" alt="Dunsparce" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×2</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Dunsparce</span> <span class="slot__code">JTG 120</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Dudunsparce" data-code="TEF 129" data-qty="1" data-role="Run Away Draw: draw 3, then it shuffles itself and everything attached back into the deck. A free reload that never gives up a Prize. H mark: rotates April 2027, and Dunsparce has no other evolution target that survives." data-img="/img/cards/dudunsparce.webp">
+              <span class="card__face"><img src="/img/cards/dudunsparce.webp" alt="Dudunsparce" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Dudunsparce</span> <span class="slot__code">TEF 129</span></span>
+          </li>
+          <li class="slot" data-stack="1" data-foil>
+            <button class="card" type="button" data-card data-name="Lillie&#x27;s Clefairy ex" data-code="JTG 56" data-qty="1" data-role="Fairy Zone makes an opponent&#x27;s Darkness Pokémon weak to Psychic instead — useful since this whole deck is weak to Darkness. Full Moon Rondo scales with total Bench count on both sides." data-img="/img/cards/lillies-clefairy-ex.webp">
+              <span class="card__face"><img src="/img/cards/lillies-clefairy-ex.webp" alt="Lillie&#x27;s Clefairy ex" loading="lazy" decoding="async" width="600" height="825"><span class="foil"></span></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Lillie&#x27;s Clefairy ex</span> <span class="slot__code">JTG 56</span></span>
+          </li>
+          <li class="slot" data-stack="1" data-foil>
+            <button class="card" type="button" data-card data-name="Latias ex" data-code="SSP 76" data-qty="1" data-role="Skyliner: every Basic Pokémon you have in play retreats for free — fixes Dhelmise&#x27;s own clumsy Retreat 3. Eon Blade hits for 200 but locks it from attacking next turn. H mark: rotates April 2027." data-img="/img/cards/latias-ex.webp">
+              <span class="card__face"><img src="/img/cards/latias-ex.webp" alt="Latias ex" loading="lazy" decoding="async" width="600" height="825"><span class="foil"></span></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Latias ex</span> <span class="slot__code">SSP 76</span></span>
+          </li>
+          <li class="slot" data-stack="1" data-foil>
+            <button class="card" type="button" data-card data-name="Bloodmoon Ursaluna ex" data-code="TWM 141" data-qty="1" data-role="Blood Moon: 5 Energy of any type for 240, enough to knock out almost anything, but it can&#x27;t attack the turn after. A Colorless attacker, so this deck&#x27;s Psychic Energy base pays for it with no changes. H mark: rotates April 2027." data-img="/img/cards/bloodmoon-ursaluna-ex.webp">
+              <span class="card__face"><img src="/img/cards/bloodmoon-ursaluna-ex.webp" alt="Bloodmoon Ursaluna ex" loading="lazy" decoding="async" width="600" height="825"><span class="foil"></span></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Bloodmoon Ursaluna ex</span> <span class="slot__code">TWM 141</span></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="zone">
+        <h3 class="zone__title">Trainers <span>27</span></h3>
+        <ul class="grid" role="list">
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Gwynn" data-code="PBL 78" data-qty="4" data-role="Discard up to 2 Pokémon without a Rule Box from hand, draw 3 for each one discarded. The fastest way to the Vengeful Anchor threshold: 2 Hide &#x27;n&#x27; Sneak Pokémon down, 6 cards up." data-img="/img/cards/gwynn.webp">
+              <span class="card__face"><img src="/img/cards/gwynn.webp" alt="Gwynn" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Gwynn</span> <span class="slot__code">PBL 78</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Explorer&#x27;s Guidance" data-code="TEF 147" data-qty="4" data-role="Look at the top 6, keep 2, discard the rest. Often several of the 4 discarded are Hide &#x27;n&#x27; Sneak Pokémon it had no use for anyway. H mark: rotates April 2027." data-img="/img/cards/explorers-guidance.webp">
+              <span class="card__face"><img src="/img/cards/explorers-guidance.webp" alt="Explorer&#x27;s Guidance" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Explorer&#x27;s Guidance</span> <span class="slot__code">TEF 147</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Ultra Ball" data-code="MEG 131" data-qty="4" data-role="Discard 2, search for any Pokémon — including Lillie&#x27;s Clefairy ex. Pay the discard cost with spare Hide &#x27;n&#x27; Sneak Pokémon, not Energy, whenever you can." data-img="/img/cards/ultra-ball.webp">
+              <span class="card__face"><img src="/img/cards/ultra-ball.webp" alt="Ultra Ball" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Ultra Ball</span> <span class="slot__code">MEG 131</span></span>
+          </li>
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Poké Pad" data-code="POR 81" data-qty="4" data-role="Search a Pokémon without a Rule Box: Shuppet, Banette, Poltchageist, Sinistcha, Dunsparce, Dudunsparce. Not Lillie&#x27;s Clefairy ex." data-img="/img/cards/poke-pad.webp">
+              <span class="card__face"><img src="/img/cards/poke-pad.webp" alt="Poké Pad" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Poké Pad</span> <span class="slot__code">POR 81</span></span>
+          </li>
+          <li class="slot" data-stack="2">
+            <button class="card" type="button" data-card data-name="Boss&#x27;s Orders" data-code="MEG 114" data-qty="2" data-role="Pull up whatever Matcha Spin&#x27;s 4 counters already damaged, or a Basic before it evolves." data-img="/img/cards/bosss-orders.webp">
+              <span class="card__face"><img src="/img/cards/bosss-orders.webp" alt="Boss&#x27;s Orders" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×2</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Boss&#x27;s Orders</span> <span class="slot__code">MEG 114</span></span>
+          </li>
+          <li class="slot" data-stack="3">
+            <button class="card" type="button" data-card data-name="Night Stretcher" data-code="ASC 196" data-qty="3" data-role="Gets back a Pokémon or a basic Energy from the discard. This deck wants its Hide &#x27;n&#x27; Sneak Pokémon to stay discarded, so use it for Energy or a specific body you&#x27;re short of. H mark: rotates April 2027." data-img="/img/cards/night-stretcher.webp">
+              <span class="card__face"><img src="/img/cards/night-stretcher.webp" alt="Night Stretcher" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×3</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Night Stretcher</span> <span class="slot__code">ASC 196</span></span>
+          </li>
+          <li class="slot" data-stack="3">
+            <button class="card" type="button" data-card data-name="Lillie&#x27;s Determination" data-code="MEG 119" data-qty="3" data-role="Main draw: 8 while you still have all 6 Prize cards, 6 after your first Knock Out. Shuffles your hand away, so play Items and attach first." data-img="/img/cards/lillies-determination.webp">
+              <span class="card__face"><img src="/img/cards/lillies-determination.webp" alt="Lillie&#x27;s Determination" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×3</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Lillie&#x27;s Determination</span> <span class="slot__code">MEG 119</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Prism Tower" data-code="CRI 80" data-qty="1" data-role="Once each turn, either player may discard 2 and draw 1. Feeds 2 more Hide &#x27;n&#x27; Sneak Pokémon to your discard pile for a card back — but it helps the opponent too." data-img="/img/cards/prism-tower.webp">
+              <span class="card__face"><img src="/img/cards/prism-tower.webp" alt="Prism Tower" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Prism Tower</span> <span class="slot__code">CRI 80</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Pokégear 3.0" data-code="BLK 84" data-qty="1" data-role="Look at the top 7 for a Supporter: Gwynn when the discard pile needs filling, Boss&#x27;s Orders when it&#x27;s time to pull up a target. Must be the Black Bolt printing — it&#x27;s the only one with a surviving I mark." data-img="/img/cards/pokegear-30.webp">
+              <span class="card__face"><img src="/img/cards/pokegear-30.webp" alt="Pokégear 3.0" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Pokégear 3.0</span> <span class="slot__code">BLK 84</span></span>
+          </li>
+          <li class="slot" data-stack="1">
+            <button class="card" type="button" data-card data-name="Buddy-Buddy Poffin" data-code="TEF 144" data-qty="1" data-role="Up to 2 Basics with 70 HP or less to the Bench: Shuppet, Poltchageist, Dunsparce. H mark: rotates April 2027." data-img="/img/cards/buddy-buddy-poffin.webp">
+              <span class="card__face"><img src="/img/cards/buddy-buddy-poffin.webp" alt="Buddy-Buddy Poffin" loading="lazy" decoding="async" width="600" height="825"></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Buddy-Buddy Poffin</span> <span class="slot__code">TEF 144</span></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="zone">
+        <h3 class="zone__title">Energy <span>7</span></h3>
+        <ul class="grid" role="list">
+          <li class="slot" data-stack="4">
+            <button class="card" type="button" data-card data-name="Telepathic Psychic Energy" data-code="POR 88" data-qty="4" data-role="Provides Psychic Energy. Attaching it from hand to a Psychic Pokémon searches up to 2 Basic Psychic Pokémon — Dhelmise or Shuppet — straight onto the Bench.">
+              <span class="card__face"><span class="energy-art" aria-hidden="true"><span class="energy-art__orb"></span><span class="energy-art__label">Telepathic Psychic Energy</span></span></span>
+              <span class="card__qty">×4</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Telepathic Psychic Energy</span> <span class="slot__code">POR 88</span></span>
+          </li>
+          <li class="slot" data-stack="2">
+            <button class="card" type="button" data-card data-name="Psychic Energy" data-code="MEE 13" data-qty="2" data-role="Basic Psychic Energy. Pays the rest of Vengeful Anchor and Full Moon Rondo's cost.">
+              <span class="card__face"><span class="energy-art" aria-hidden="true"><span class="energy-art__orb"></span><span class="energy-art__label">Psychic Energy</span></span></span>
+              <span class="card__qty">×2</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Psychic Energy</span> <span class="slot__code">MEE 13</span></span>
+          </li>
+          <li class="slot" data-stack="1" data-foil>
+            <button class="card" type="button" data-card data-name="Legacy Energy" data-code="TWM 167" data-qty="1" data-role="ACE SPEC. Provides any one Energy type, one at a time. If the Pokémon holding it is Knocked Out by an attack, your opponent takes 1 fewer Prize, once per game. H mark: rotates April 2027.">
+              <span class="card__face"><span class="energy-art" aria-hidden="true"><span class="energy-art__orb"></span><span class="energy-art__label">Legacy Energy</span></span></span>
+              <span class="card__qty">×1</span>
+            </button>
+            <span class="slot__caption"><span class="slot__name">Legacy Energy</span> <span class="slot__code">TWM 167</span></span>
+          </li>
+        </ul>
+      </div>
+
+      <p class="mat__note">Tap a card for what it does here. This 60 went through two more rounds after the first Monte Carlo pass: Sinistcha moved to 4 copies for a further free speed-up, and Carlos added Latias ex and Bloodmoon Ursaluna ex as extra power on top of the discard engine, accepting that both rotate with the rest of this build&#x27;s H-mark cards. It isn&#x27;t built yet — see <a class="inline-link" href="#buy">Buy</a> for what&#x27;s missing.</p>
+      <p class="aside">Chosen 2026‑11‑03 as a second deck alongside N's Zoroark ex: of the strong 30C decks screened, only Dhelmise and Crustle have a fully I/J-mark attacking core, and Dhelmise's is mostly already in the collection. The Dhelmise/Shuppet/Banette/Poltchageist/Sinistcha line itself, Dunsparce, Lillie's Clefairy ex, Ultra Ball, Poké Pad, Boss's Orders, Lillie's Determination, Prism Tower and the Black Bolt Pokégear 3.0 all survive the rotation. But 12 of these 60 cards — 1 Dudunsparce, 4 Explorer's Guidance, 3 Night Stretcher, 1 Buddy-Buddy Poffin, 1 Legacy Energy, and the 2 new attackers, Latias ex and Bloodmoon Ursaluna ex — are H mark and due to rotate at the same April 2027 cutoff that cancelled Dragapult ex. Latias ex and Bloodmoon Ursaluna ex were added anyway: Carlos chose power now over staying fully rotation-proof, the same way N's Zoroark ex already carries its own H-mark Trainers rather than running a weaker, fully future-proof 60.</p>
+      <pre id="decklist-plaintext" hidden>Pokémon: 26
+4 Dhelmise PBL 39
+4 Shuppet PBL 33
+4 Banette PBL 34
+4 Poltchageist PBL 5
+4 Sinistcha PBL 6
+2 Dunsparce JTG 120
+1 Dudunsparce TEF 129
+1 Lillie&#x27;s Clefairy ex JTG 56
+1 Latias ex SSP 76
+1 Bloodmoon Ursaluna ex TWM 141
+
+Trainer: 27
+4 Gwynn PBL 78
+4 Explorer&#x27;s Guidance TEF 147
+4 Ultra Ball MEG 131
+4 Poké Pad POR 81
+2 Boss&#x27;s Orders MEG 114
+3 Night Stretcher ASC 196
+3 Lillie&#x27;s Determination MEG 119
+1 Prism Tower CRI 80
+1 Pokégear 3.0 BLK 84
+1 Buddy-Buddy Poffin TEF 144
+
+Energy: 7
+4 Telepathic Psychic Energy POR 88
+2 Psychic Energy MEE 13
+1 Legacy Energy TWM 167
+
+Total Cards: 60</pre>
+    </section>
+
+    <section id="engine" aria-labelledby="engine-title">
+      <h2 id="engine-title" class="section-title">How it takes Prizes</h2>
+      <p class="section-dek">The deck's plan in four steps: the discard pile is the real board.</p>
+      <ol class="chain" role="list">
+        <li class="chain__step">
+          <span class="chain__n">1</span>
+          <img class="chain__img" src="/img/cards/gwynn.webp" alt="Gwynn" loading="lazy" width="600" height="825">
+          <h3 class="chain__title">Discard</h3>
+          <p class="chain__text">Gwynn discards 2 Hide 'n' Sneak Pokémon straight from hand and draws 6.</p>
+        </li>
+        <li class="chain__step">
+          <span class="chain__n">2</span>
+          <img class="chain__img" src="/img/cards/explorers-guidance.webp" alt="Explorer's Guidance" loading="lazy" width="600" height="825">
+          <h3 class="chain__title">Dig</h3>
+          <p class="chain__text">Explorer's Guidance, Poké Pad and Ultra Ball keep finding more Hide 'n' Sneak bodies and spending them.</p>
+        </li>
+        <li class="chain__step">
+          <span class="chain__n">3</span>
+          <img class="chain__img" src="/img/cards/shuppet.webp" alt="Shuppet" loading="lazy" width="600" height="825">
+          <h3 class="chain__title">Stack</h3>
+          <p class="chain__text">Telepathic Psychic Energy benches 2 more Basic Psychic Pokémon on attach; Prism Tower trades 2 cards for 1.</p>
+        </li>
+        <li class="chain__step chain__step--hit">
+          <span class="chain__n">4</span>
+          <img class="chain__img" src="/img/cards/dhelmise.webp" alt="Dhelmise" loading="lazy" width="600" height="825">
+          <h3 class="chain__title">170 / wipe</h3>
+          <p class="chain__text">4 in the discard: Vengeful Anchor hits for 170. 6 in the discard: Matcha Spin drops 4 counters on everything they have.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="play" aria-labelledby="play-title">
+      <h2 id="play-title" class="section-title">How it plays</h2>
+      <div class="panels">
+        <article class="panel">
+          <h3 class="panel__title">Opening</h3>
+          <ul class="panel__list">
+            <li>Keep any hand with a Basic. Best: Poltchageist (Retreat 0) plus Buddy-Buddy Poffin, Ultra Ball or Poké Pad.</li>
+            <li><strong>What finds what:</strong> Poké Pad gets anything without a Rule Box. Ultra Ball gets anything, Lillie's Clefairy ex included, for a discard-2 cost. Buddy-Buddy Poffin benches two 70-HP-or-less Basics: Shuppet, Poltchageist, Dunsparce.</li>
+            <li>Start Poltchageist or Shuppet Active, not Dhelmise. Dhelmise is Retreat 3 and weak to Darkness; keep it Benched until the discard count is actually ready, or until Latias ex's Skyliner is in play to retreat it for free.</li>
+            <li>Going second with 2+ spare Hide 'n' Sneak Pokémon already in hand: Gwynn immediately for 6 cards. Otherwise Explorer's Guidance or Lillie's Determination.</li>
+            <li>Bench order (5 slots): 2–3 Hide 'n' Sneak Basics → Dunsparce → Dhelmise once it's time to attack.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel__title">The engine</h3>
+          <ul class="panel__list">
+            <li>Discard, don't play out, the Hide 'n' Sneak line. Every Shuppet, Banette, Poltchageist or Sinistcha that reaches the discard pile — by Gwynn, Explorer's Guidance, Ultra Ball's own cost, or a Knock Out — counts toward both thresholds.</li>
+            <li>Only one Supporter a turn, and this list runs four: Gwynn, Explorer's Guidance, Boss's Orders, Lillie's Determination. Gwynn when the hand already holds 2 to discard; Explorer's Guidance when it doesn't.</li>
+            <li>Telepathic Psychic Energy, attached to any Psychic Pokémon in play, searches up to 2 more Basic Psychic Pokémon onto the Bench the same turn — the fastest way to a second Dhelmise without drawing it.</li>
+            <li>Prism Tower: play it only after Gwynn or Explorer's Guidance have already thinned the hand. It lets the opponent filter for free too.</li>
+            <li>Latias ex's Skyliner Ability gives every Basic Pokémon in play free retreat — once it's on the Bench, Dhelmise's own Retreat 3 stops being a problem, and so does Poltchageist/Shuppet/Dunsparce shuffling in and out.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel__title">Winning</h3>
+          <ul class="panel__list">
+            <li>Vengeful Anchor is 30 base, 170 once 4 Hide 'n' Sneak Pokémon are discarded. This session's simulation: maxing Gwynn and Explorer's Guidance to 4 copies each, with 4 Sinistcha in the discard-fodder count, clearly beats every lower count tried at reaching that 4th discard quickly — treat the ranking as real, not the exact percentage, since two separate simulation runs gave different absolute numbers for the same build.</li>
+            <li>Matcha Spin needs 6 in the discard pile and puts 4 counters on every opposing Pokémon at once — the deck's answer to a wide Bench, not a single-target finisher.</li>
+            <li>Boss's Orders pulls up whatever Matcha Spin's spread already hurt, or a Basic before it evolves.</li>
+            <li>Dudunsparce is a free reload, not a Prize risk: Run Away Draw draws 3 and shuffles it and everything attached back into the deck, so the opponent never banks a Knock Out on it. Only 1 copy runs in this build — Dunsparce itself survives the April 2027 rotation but Dudunsparce doesn't, so don't expect to replace it with a newer printing afterward.</li>
+            <li>Bloodmoon Ursaluna ex's Blood Moon is the deck's single biggest hit (240, any 5 Energy) — hold it for a Knock Out it can actually land, since it can't attack again the following turn.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel__title">Decisions</h3>
+          <ul class="panel__list">
+            <li><strong>Gwynn or Explorer's Guidance:</strong> Gwynn when the hand already holds 2 Pokémon worth discarding — immediate 6 cards, no filtering. Explorer's Guidance when it doesn't; it looks at 6 and keeps the best 2, usually discarding at least one more Hide 'n' Sneak Pokémon from the rest.</li>
+            <li>Don't let Explorer's Guidance or Ultra Ball discard the single Legacy Energy, Pokégear 3.0, Buddy-Buddy Poffin, Latias ex or Bloodmoon Ursaluna ex — only 1 copy of each runs here, and the last two are 2-Prize cards you actually want to play, not feed to the discard pile like the Hide 'n' Sneak line.</li>
+            <li>Night Stretcher: this deck wants its Hide 'n' Sneak Pokémon to stay discarded. Use it to get back a basic Energy or a specific Pokémon you're actually short of in play, not reflexively.</li>
+            <li>Lillie's Clefairy ex: bench it for Fairy Zone against a Darkness attacker, since it turns their Weakness to Psychic. It's 190 HP but weak to Metal and worth 2 Prizes; don't leave it Active without a reason.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel__title">Combos</h3>
+          <ul class="panel__list">
+            <li>Telepathic Psychic Energy + an open Bench slot: search 2 more Basic Psychic Pokémon onto the Bench the same turn Gwynn discards 2 more — up to 4 Hide 'n' Sneak Pokémon move in one turn.</li>
+            <li>Gwynn into Explorer's Guidance across two turns: Gwynn clears 2 immediately, then Explorer's Guidance usually finds at least 1 more from the next top 6.</li>
+            <li>Ultra Ball's own discard-2 cost: pay it with spare Hide 'n' Sneak Pokémon instead of Energy, turning a search Item into free discard-pile progress.</li>
+            <li>Matcha Spin + Boss's Orders: once 6 are discarded, Matcha Spin's 4 counters land on the whole board; Boss's Orders the next turn finishes whatever it didn't already Knock Out.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel__title">Misplays</h3>
+          <ul class="panel__list">
+            <li>Attacking with a Hide 'n' Sneak Pokémon instead of discarding it. Puppet Pull (80) and Hang Down (10) are real attacks, but this deck's value is in the discard pile, not the Active Spot.</li>
+            <li>Using Night Stretcher to bring a Hide 'n' Sneak Pokémon back "to be safe." That undoes progress toward the 4/6 threshold.</li>
+            <li>Playing Prism Tower before Gwynn or Explorer's Guidance have already filled the discard pile — it hands the opponent the same filter for free.</li>
+            <li>Paying to retreat Dudunsparce. Its own Retreat is 3, but Run Away Draw already returns it and everything attached to the deck for free.</li>
+            <li>Benching Lillie's Clefairy ex out of habit. It's a 2-Prize, Metal-weak target; only bench it when Fairy Zone is actually relevant.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="aside">Hide 'n' Sneak blocks effects of attacks and Abilities aimed at that Pokémon specifically — its own card text says "Damage is not an effect." So Matcha Spin's counters, and an opponent's own spread damage, still land on a Hide 'n' Sneak Pokémon; only secondary effects (Special Conditions, extra effects tacked onto an attack) are stopped.</p>
+    </section>
+
+    <section id="damage" aria-labelledby="damage-title">
+      <h2 id="damage-title" class="section-title">Damage routes</h2>
+      <p class="section-dek">Damage to the opponent's Active, before Weakness. Full Moon Rondo scales with total Benched Pokémon on both sides; the row below assumes 3 benched. Off the chart: <strong>Matcha Spin</strong> doesn't hit the Active — at 6+ Hide 'n' Sneak Pokémon in the discard pile, it places 4 counters (40 damage) on every one of the opponent's Pokémon at once.</p>
+      <ol class="bars" role="list">
+            <li class="bar" style="--v:0.0417">
+              <span class="bar__value">10</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Shuppet: Hang Down</strong><span>One Psychic Energy</span></span>
+            </li>
+            <li class="bar" style="--v:0.0833">
+              <span class="bar__value">20</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Dunsparce: Ram</strong><span>Two Energy of any type</span></span>
+            </li>
+            <li class="bar" style="--v:0.1250">
+              <span class="bar__value">30</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Dhelmise: Vengeful Anchor</strong><span>Below the 4-in-discard threshold</span></span>
+            </li>
+            <li class="bar" style="--v:0.2500">
+              <span class="bar__value">60</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Lillie&#x27;s Clefairy ex: Full Moon Rondo</strong><span>+20 per Pokémon benched, both sides; 60 with 3 total</span></span>
+            </li>
+            <li class="bar" style="--v:0.3333">
+              <span class="bar__value">80</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Banette: Puppet Pull</strong><span>One Psychic Energy. Also searches a card</span></span>
+            </li>
+            <li class="bar" style="--v:0.3750">
+              <span class="bar__value">90</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Dudunsparce: Land Crush</strong><span>Three Energy of any type</span></span>
+            </li>
+            <li class="bar" style="--v:0.7083">
+              <span class="bar__value">170</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Dhelmise: Vengeful Anchor</strong><span>4+ Hide &#x27;n&#x27; Sneak Pokémon in the discard pile</span></span>
+            </li>
+            <li class="bar" style="--v:0.8333">
+              <span class="bar__value">200</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Latias ex: Eon Blade</strong><span>Psychic + Psychic + Colorless. Can&#x27;t attack next turn</span></span>
+            </li>
+            <li class="bar" style="--v:1.0000">
+              <span class="bar__value">240</span>
+              <span class="bar__track"><span class="bar__fill"></span></span>
+              <span class="bar__label"><strong>Bloodmoon Ursaluna ex: Blood Moon</strong><span>Five Energy of any type. Can&#x27;t attack next turn</span></span>
+            </li>
+      </ol>
+    </section>
+
+    <section id="matchups" aria-labelledby="mu-title">
+      <h2 id="mu-title" class="section-title">Matchups</h2>
+      <p class="section-dek">A full per-archetype matchup table isn't available yet with real sample sizes for this exact 60 in 30th Celebration — only the deck-level numbers and the one cross-checked data point below are verified. Treat the rest as structural reasoning from card text, not measured win rates.</p>
+      <ul class="mus" role="list">
+            <li class="mu mu--neg" style="--d:0.3500">
+              <span class="mu__name">N&#x27;s Zoroark ex</span>
+              <span class="mu__chart" role="img" aria-label="32.5% win rate"><span class="mu__mid"></span><span class="mu__fill"></span></span>
+              <span class="mu__pct">32.5%</span>
+              <span class="mu__plan"><span class="mu__rec">50‑104</span> Unfavourable, from the Zoroark guide's own matchup data. Night Joker → Shred (140) one-shots Dhelmise, which is weak to Darkness, and every Shuppet or Poltchageist N's Zoroark Knocks Out feeds Vengeful Anchor for them, not you. Boss's Orders the Dhelmise directly instead of trading into their Bench.</span>
+            </li>
+      </ul>
+      <p class="aside">Structural read from verified card text: every attacker in this deck is weak to either Darkness (Dhelmise, Shuppet, Banette) or Fire (Poltchageist, Sinistcha) except Dunsparce/Dudunsparce (weak Fighting) and Lillie's Clefairy ex (weak Metal). A deck built around Darkness or Fire attackers is a structurally bad matchup on paper; nothing here is a measured win rate.</p>
+    </section>
+
+    <section id="buy" aria-labelledby="buy-title">
+      <h2 id="buy-title" class="section-title">What to buy</h2>
+      <p class="section-dek">Starting from a collection that already covers enough Dhelmise, Shuppet, Poltchageist, Gwynn, Boss's Orders, Lillie's Determination and Buddy-Buddy Poffin. Prices and stock checked live at Chispas TCG (chispastcg.shop, El Salvador), 2026‑11‑03.</p>
+      <ol class="buy" role="list">
+          <li class="buy__step">
+            <span class="buy__n">1</span>
+            <div class="buy__body">
+              <p class="buy__cards">1 Sinistcha, 3 Banette, 1 Poké Pad, 3 Ultra Ball <span class="buy__cost">US$2.08</span></p>
+              <p class="buy__why">All in stock now at Chispas: Sinistcha $0.24, Banette $0.26 each, Poké Pad $0.31, Ultra Ball (Scarlet &amp; Violet #196) $0.25 each.</p>
+            </div>
+          </li>
+          <li class="buy__step">
+            <span class="buy__n">2</span>
+            <div class="buy__body">
+              <p class="buy__cards">3 of the 4 Explorer's Guidance, 1 Prism Tower <span class="buy__cost">US$0.45</span></p>
+              <p class="buy__why">$0.15 each at Chispas. Explorer's Guidance is capped at 3 copies in stock there; the 4th has to come from elsewhere. Only 1 Prism Tower is needed now, down from the earlier build's 2.</p>
+            </div>
+          </li>
+          <li class="buy__step">
+            <span class="buy__n">3</span>
+            <div class="buy__body">
+              <p class="buy__cards">3 Night Stretcher, 2 Bloodmoon Ursaluna ex <span class="buy__cost">US$2.63</span></p>
+              <p class="buy__why">Chispas stocks the Shrouded Fable Night Stretcher printing ($0.33 each) rather than the Ascended Heroes one pictured on the mat — same card, same H-mark rotation date. Bloodmoon Ursaluna ex TWM 141, the exact printing on the mat, is in stock there too at $0.82 each — buy 2 so a spare backs up the one in the 60.</p>
+            </div>
+          </li>
+          <li class="buy__step">
+            <span class="buy__n">4</span>
+            <div class="buy__body">
+              <p class="buy__cards">2 Dunsparce, 1 Dudunsparce, 1 Lillie's Clefairy ex, 1 Pokégear 3.0 (Black Bolt), 1 Explorer's Guidance, 1 Latias ex (SSP 76), 4 Telepathic Psychic Energy, 1 Legacy Energy <span class="buy__cost">~US$13.90</span></p>
+              <p class="buy__why">None of these are in stock at Chispas or UniversoTCG — source via TCGplayer/Quickbox. Market prices (tcgdex, checked 2026‑11‑03): Dunsparce $1.45, Dudunsparce $0.94, Pokégear 3.0 Black Bolt $0.25, Explorer's Guidance $0.17, Latias ex (Surging Sparks #076, not the #220 alt-art Chispas lists) about $0.65, Telepathic Psychic Energy $0.26, Legacy Energy $4.26 (ACE SPEC). <strong>Don't buy Chispas's Lillie's Clefairy ex listing</strong> — it's a manually-added $60 entry for the wrong, secret-rare printing (173/159); the real card is about $2.61.</p>
+            </div>
+          </li>
+      </ol>
+      <p class="aside">Total to finish the deck from the current collection: roughly US$19 — under US$5 of it locally (Bloodmoon Ursaluna ex included), the rest via TCGplayer. The H-mark cards in this build (Dudunsparce, Explorer's Guidance, Night Stretcher, Buddy-Buddy Poffin, Legacy Energy, Latias ex, Bloodmoon Ursaluna ex) are worth buying now regardless: all legal until April 2027 and cheap everywhere except Legacy Energy.</p>
+    </section>
+
+    <section id="sources" aria-labelledby="src-title">
+      <h2 id="src-title" class="section-title">Sources</h2>
+      <p class="section-dek">Card text, regulation marks and pricing for all 60 cards checked against tcgdex on 2026‑11‑03. Legal in 2026 Standard: regulation marks H, I and J.</p>
+      <ol class="sources">
+        <li><a class="inline-link" href="https://play.limitlesstcg.com/decks?format=standard&amp;rotation=2026&amp;set=30C" target="_blank" rel="noopener">Limitless — Standard meta share, 30th Celebration (Dhelmise: 4.85% share, 50.52% win rate, rank 4)</a></li>
+        <li><a class="inline-link" href="/zoroark/#matchups">N's Zoroark ex guide, this site — source for the Dhelmise matchup (50‑104)</a></li>
+        <li><a class="inline-link" href="https://tcgdex.dev" target="_blank" rel="noopener">tcgdex — card text, regulation marks, images and pricing</a></li>
+        <li><a class="inline-link" href="https://chispastcg.shop" target="_blank" rel="noopener">Chispas TCG — live stock and prices, El Salvador, checked 2026‑11‑03</a></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span><a class="inline-link" href="/">All deck guides</a></span><span>checked 2026‑11‑03</span><span>Card images © Pokémon / Nintendo / Creatures / GAME FREAK, via tcgdex. Reference only; not affiliated with Pokémon</span>
+  </footer>
+
+  <dialog class="viewer" id="viewer" aria-labelledby="viewer-name">
+    <div class="viewer__body">
+      <div class="viewer__art"><img id="viewer-img" alt=""></div>
+      <div class="viewer__text">
+        <p class="viewer__meta"><span id="viewer-qty"></span> · <span id="viewer-code"></span></p>
+        <h2 class="viewer__name" id="viewer-name"></h2>
+        <p class="viewer__role" id="viewer-role"></p>
+        <form method="dialog"><button class="btn" type="submit">Close</button></form>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="/js/app.js?v=20261012"></script>
+</body>
+</html>
